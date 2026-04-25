@@ -1,0 +1,27 @@
+{
+  "name": "wandervox-site",
+  "version": "1.0.0",
+  "description": "WanderVox marketing site - Voice & Photo Translation Travel App",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests for static site\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiMOdev/wandervox-site.git"
+  },
+  "keywords": [
+    "wandervox",
+    "travel",
+    "translation"
+  ],
+  "author": "WanderVox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaiMOdev/wandervox-site/issues"
+  },
+  "homepage": "https://wandervox.app",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
