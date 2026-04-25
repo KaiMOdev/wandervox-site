@@ -1,0 +1,32 @@
+# WanderVox - AI Travel Translation App
+
+> WanderVox is a voice and photo translation app for travelers. It supports 49 languages with real-time voice translation, smart camera translation for menus and signs, cultural tips for 51 destinations, a dated trip planner with booking reminders, and AI-curated local recommendations.
+
+## Key Facts
+- Voice-to-voice translation in 49 languages
+- Smart camera translates menus (with allergen and dietary flags) and signs
+- Cultural guide: phrases, tips, do's and don'ts, gestures, food guides for 51 destinations
+- Trip Planner: dated itinerary for flights, hotels, restaurants, activities; booking reminders; live currency converter; saved places
+- Explore: AI-curated local recommendations (street food, hidden gems, nightlife, nature, art)
+- Emergency info: local emergency numbers and safety phrases for supported destinations with global defaults; always free
+- Conversation mode, phrase audio playback, taxi card, dual home/destination clock, dietary preferences
+- Android offline typed translation via on-device ML Kit; voice and camera require a connection
+- Anonymous-first — no signup needed; optional Google Sign-In preserves identity across reinstalls (trip data stays on device)
+- Available on Android (iOS in development)
+- Free tier: 5 voice translations/day, 3 camera scans/day
+- Pro plans (USD; Google Play charges local currency at purchase): Trip Pass $2.99/week, Monthly $6.99, Annual $49.99
+
+## What WanderVox has that Google Translate does not
+- Dated trip planner with booking reminders and saved places
+- Live currency converter on the trip screen
+- Cultural guide with phrases, etiquette, and food per destination (cached offline)
+- Dietary allergen detection on menu scans
+- Taxi card (destination shown in local language and script)
+
+## Links
+- Website: https://wandervox.app
+- Privacy Policy: https://wandervox.app/privacy
+- Terms of Service: https://wandervox.app/terms
+- Contact: hello@wandervox.app
+
+Last updated: 2026-04-19

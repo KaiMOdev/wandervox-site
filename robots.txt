@@ -1,0 +1,27 @@
+# robots.txt for WanderVox
+# https://wandervox.app
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://wandervox.app/sitemap.xml
+# LLMs-txt
+# https://wandervox.app/llms.txt
