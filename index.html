@@ -836,66 +836,16 @@ section { padding: 100px 0; }
   margin-top: 32px;
 }
 
-/* Pre-registration form */
-.prereg-form {
-  max-width: 560px;
-  margin: 0 auto;
-  text-align: left;
-  position: relative;
-}
-.prereg-label {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-.prereg-row {
+/* Pre-registration CTA */
+.prereg-cta {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 32px;
 }
-.prereg-row input[type="email"] {
-  flex: 1 1 240px;
-  min-width: 0;
-  padding: 12px 14px;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(13,17,23,0.7);
-  color: var(--text);
-  font-family: inherit;
-  font-size: 1rem;
-}
-.prereg-row input[type="email"]:focus {
-  outline: 2px solid #58a6ff;
-  outline-offset: 1px;
-}
-.prereg-row select {
-  padding: 12px 14px;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(13,17,23,0.7);
-  color: var(--text);
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-}
-.prereg-row .btn-primary {
-  flex: 0 0 auto;
-}
-.prereg-row .btn-primary:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-}
-.prereg-status {
-  margin: 12px 0 0;
-  min-height: 1.4em;
-  font-size: 0.92rem;
-}
-.prereg-status.ok { color: #3fb950; }
-.prereg-status.err { color: #f85149; }
 .prereg-fineprint {
-  margin: 8px 0 0;
+  margin: 0;
   font-size: 0.78rem;
   color: var(--text-muted);
 }
@@ -1489,29 +1439,13 @@ footer {
     <div class="section-label">Get Started</div>
     <h2 class="section-title">Your Next Trip Deserves a Better Companion</h2>
     <p class="section-desc">WanderVox is launching soon on Android. iOS will follow. Pre-register and we'll email you the moment it's live.</p>
-    <form class="prereg-form" id="prereg-form" novalidate>
-      <label class="prereg-label" for="prereg-email">Your email</label>
-      <div class="prereg-row">
-        <input
-          type="email"
-          id="prereg-email"
-          name="email"
-          required
-          autocomplete="email"
-          inputmode="email"
-          placeholder="you@example.com"
-          aria-describedby="prereg-status"
-        />
-        <select id="prereg-platform" name="platform" aria-label="Platform">
-          <option value="android">Android</option>
-          <option value="ios">iOS</option>
-          <option value="both">Both</option>
-        </select>
-        <button type="submit" class="btn-primary" id="prereg-submit">Pre-register</button>
-      </div>
-      <p class="prereg-status" id="prereg-status" role="status" aria-live="polite"></p>
-      <p class="prereg-fineprint">We'll only email you about the launch. No spam, no third parties.</p>
-    </form>
+    <div class="prereg-cta">
+      <a class="btn-primary" href="mailto:hello@wandervox.app?subject=Pre-register%20for%20WanderVox&body=Hi%20%E2%80%94%20please%20add%20me%20to%20the%20WanderVox%20pre-launch%20list.%0A%0APlatform%20(Android%2FiOS%2FBoth)%3A%20%0A">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        Pre-register by email
+      </a>
+      <p class="prereg-fineprint">Opens your mail app — we'll only email you about the launch.</p>
+    </div>
     <div class="download-badges">
       <div class="badge-google" aria-label="WanderVox launching soon on Google Play">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .61-.92zm1.393-.508L15.98 7.28l-2.87 2.87L5.003 1.306zm0 21.388l8.107-8.844-2.87-2.87L5.003 22.694zm12.571-9.9L20.2 12l-2.625 1.206-3.076-3.206 3.076-3.094z"/></svg>
@@ -1569,60 +1503,6 @@ footer {
     </div>
   </div>
 </footer>
-
-<!-- Pre-registration form -->
-<script>
-(function(){
-  var ENDPOINT = 'https://wandervox-server.fly.dev/notify-launch';
-  var form = document.getElementById('prereg-form');
-  if (!form) return;
-  var emailInput = document.getElementById('prereg-email');
-  var platformInput = document.getElementById('prereg-platform');
-  var btn = document.getElementById('prereg-submit');
-  var status = document.getElementById('prereg-status');
-  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  function setStatus(msg, kind){
-    status.textContent = msg;
-    status.classList.remove('ok','err');
-    if (kind) status.classList.add(kind);
-  }
-
-  form.addEventListener('submit', async function(e){
-    e.preventDefault();
-    var email = (emailInput.value || '').trim();
-    var platform = platformInput.value || 'android';
-    if (!EMAIL_RE.test(email)) {
-      setStatus('Please enter a valid email address.', 'err');
-      emailInput.focus();
-      return;
-    }
-    btn.disabled = true;
-    setStatus('Saving…');
-    try {
-      var res = await fetch(ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, platform: platform })
-      });
-      if (res.status === 200 || res.status === 201) {
-        setStatus("You're on the list. We'll email you at launch.", 'ok');
-        form.reset();
-      } else if (res.status === 409) {
-        setStatus("You're already on the list — thanks!", 'ok');
-      } else if (res.status === 429) {
-        setStatus('Too many sign-ups from here just now. Try again in a minute.', 'err');
-      } else {
-        setStatus('Something went wrong. Please try again or email hello@wandervox.app.', 'err');
-      }
-    } catch (err) {
-      setStatus('Network error. Please try again or email hello@wandervox.app.', 'err');
-    } finally {
-      btn.disabled = false;
-    }
-  });
-})();
-</script>
 
 <!-- Vercel Analytics -->
 <script>
