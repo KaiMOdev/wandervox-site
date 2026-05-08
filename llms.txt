@@ -12,7 +12,7 @@
 - Conversation mode, phrase audio playback, taxi card, dual home/destination clock, dietary preferences
 - Android offline typed translation via on-device ML Kit; voice and camera require a connection
 - Anonymous-first — no signup needed; optional Google Sign-In preserves identity across reinstalls (trip data stays on device)
-- Available on Android (iOS in development)
+- Launching soon on Android (iOS to follow); pre-register on https://wandervox.app to be notified at launch
 - Free tier: 5 voice translations/day, 3 camera scans/day
 - Pro plans (USD; Google Play charges local currency at purchase): Trip Pass $2.99/week, Monthly $6.99, Annual $49.99
 
@@ -29,4 +29,4 @@
 - Terms of Service: https://wandervox.app/terms
 - Contact: hello@wandervox.app
 
-Last updated: 2026-04-19
+Last updated: 2026-04-30

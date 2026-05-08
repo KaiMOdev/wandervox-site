@@ -112,7 +112,7 @@
           "name": "What platforms is WanderVox available on?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "WanderVox is currently available on Android via Google Play. An iOS version is in development and coming soon."
+            "text": "WanderVox is launching soon on Android via Google Play. An iOS version will follow."
           }
         },
         {
@@ -833,6 +833,71 @@ section { padding: 100px 0; }
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+/* Pre-registration form */
+.prereg-form {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+.prereg-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.prereg-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.prereg-row input[type="email"] {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(13,17,23,0.7);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+}
+.prereg-row input[type="email"]:focus {
+  outline: 2px solid #58a6ff;
+  outline-offset: 1px;
+}
+.prereg-row select {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(13,17,23,0.7);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.prereg-row .btn-primary {
+  flex: 0 0 auto;
+}
+.prereg-row .btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.prereg-status {
+  margin: 12px 0 0;
+  min-height: 1.4em;
+  font-size: 0.92rem;
+}
+.prereg-status.ok { color: #3fb950; }
+.prereg-status.err { color: #f85149; }
+.prereg-fineprint {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }
 
 .badge-google {
@@ -973,7 +1038,7 @@ footer {
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="/privacy">Privacy</a></li>
       <li><a href="/terms">Terms</a></li>
-      <li><a href="#download" class="nav-cta">Get the App</a></li>
+      <li><a href="#download" class="nav-cta">Coming Soon</a></li>
     </ul>
   </div>
 </nav>
@@ -985,14 +1050,14 @@ footer {
   <div class="container">
     <div class="hero-badge">
       <span class="hero-badge-dot" aria-hidden="true"></span>
-      Now available on Android
+      Launching soon on Android
     </div>
     <h1>Speak Any Language.<br>Explore Like a Local.</h1>
     <p class="hero-sub">Instantly discover local life in 49 languages across 51 destinations. Unlock real conversations, translate menus and signs, plan your trip by date, and find hidden gems your guidebook will never show you — free to start.</p>
     <div class="hero-ctas">
       <a href="#download" class="btn-primary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        Download Free
+        Notify Me
       </a>
       <a href="#features" class="btn-secondary">
         See How It Works
@@ -1396,7 +1461,7 @@ footer {
       </div>
       <div class="faq-item">
         <h3>What platforms is WanderVox available on?</h3>
-        <p>WanderVox is currently available on Android via Google Play. An iOS version is in development and coming soon.</p>
+        <p>WanderVox is launching soon on Android via Google Play. An iOS version will follow.</p>
       </div>
       <div class="faq-item">
         <h3>How does the Explore feature work?</h3>
@@ -1423,15 +1488,38 @@ footer {
   <div class="container">
     <div class="section-label">Get Started</div>
     <h2 class="section-title">Your Next Trip Deserves a Better Companion</h2>
-    <p class="section-desc">Download WanderVox and start breaking language barriers before your next flight.</p>
+    <p class="section-desc">WanderVox is launching soon on Android. iOS will follow. Pre-register and we'll email you the moment it's live.</p>
+    <form class="prereg-form" id="prereg-form" novalidate>
+      <label class="prereg-label" for="prereg-email">Your email</label>
+      <div class="prereg-row">
+        <input
+          type="email"
+          id="prereg-email"
+          name="email"
+          required
+          autocomplete="email"
+          inputmode="email"
+          placeholder="you@example.com"
+          aria-describedby="prereg-status"
+        />
+        <select id="prereg-platform" name="platform" aria-label="Platform">
+          <option value="android">Android</option>
+          <option value="ios">iOS</option>
+          <option value="both">Both</option>
+        </select>
+        <button type="submit" class="btn-primary" id="prereg-submit">Pre-register</button>
+      </div>
+      <p class="prereg-status" id="prereg-status" role="status" aria-live="polite"></p>
+      <p class="prereg-fineprint">We'll only email you about the launch. No spam, no third parties.</p>
+    </form>
     <div class="download-badges">
-      <a href="#" class="badge-google" aria-label="Get WanderVox on Google Play">
+      <div class="badge-google" aria-label="WanderVox launching soon on Google Play">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .61-.92zm1.393-.508L15.98 7.28l-2.87 2.87L5.003 1.306zm0 21.388l8.107-8.844-2.87-2.87L5.003 22.694zm12.571-9.9L20.2 12l-2.625 1.206-3.076-3.206 3.076-3.094z"/></svg>
         <div>
-          <span class="badge-google-sub">GET IT ON</span>
+          <span class="badge-google-sub">COMING SOON</span>
           <span class="badge-google-main">Google Play</span>
         </div>
-      </a>
+      </div>
       <div class="badge-ios" aria-label="iOS version coming soon">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#8b949e" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
         <div>
@@ -1459,7 +1547,7 @@ footer {
           <li><a href="/">Home</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#download">Download</a></li>
+          <li><a href="#download">Launch</a></li>
         </ul>
       </div>
       <div>
@@ -1472,7 +1560,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">&copy; 2026 WanderVox. All rights reserved. A product by <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">Last updated: April 19, 2026</span></div>
+      <div class="footer-copy">&copy; 2026 WanderVox. All rights reserved. A product by <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">Last updated: April 30, 2026</span></div>
       <div class="footer-legal">
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
@@ -1481,6 +1569,60 @@ footer {
     </div>
   </div>
 </footer>
+
+<!-- Pre-registration form -->
+<script>
+(function(){
+  var ENDPOINT = 'https://wandervox-server.fly.dev/notify-launch';
+  var form = document.getElementById('prereg-form');
+  if (!form) return;
+  var emailInput = document.getElementById('prereg-email');
+  var platformInput = document.getElementById('prereg-platform');
+  var btn = document.getElementById('prereg-submit');
+  var status = document.getElementById('prereg-status');
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function setStatus(msg, kind){
+    status.textContent = msg;
+    status.classList.remove('ok','err');
+    if (kind) status.classList.add(kind);
+  }
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var email = (emailInput.value || '').trim();
+    var platform = platformInput.value || 'android';
+    if (!EMAIL_RE.test(email)) {
+      setStatus('Please enter a valid email address.', 'err');
+      emailInput.focus();
+      return;
+    }
+    btn.disabled = true;
+    setStatus('Saving…');
+    try {
+      var res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, platform: platform })
+      });
+      if (res.status === 200 || res.status === 201) {
+        setStatus("You're on the list. We'll email you at launch.", 'ok');
+        form.reset();
+      } else if (res.status === 409) {
+        setStatus("You're already on the list — thanks!", 'ok');
+      } else if (res.status === 429) {
+        setStatus('Too many sign-ups from here just now. Try again in a minute.', 'err');
+      } else {
+        setStatus('Something went wrong. Please try again or email hello@wandervox.app.', 'err');
+      }
+    } catch (err) {
+      setStatus('Network error. Please try again or email hello@wandervox.app.', 'err');
+    } finally {
+      btn.disabled = false;
+    }
+  });
+})();
+</script>
 
 <!-- Vercel Analytics -->
 <script>
