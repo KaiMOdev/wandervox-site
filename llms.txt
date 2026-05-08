@@ -14,7 +14,7 @@
 - Anonymous-first — no signup needed; optional Google Sign-In preserves identity across reinstalls (trip data stays on device)
 - Launching soon on Android; pre-register on Google Play at https://play.google.com/store/apps/details?id=com.wandervox.app to be notified at launch
 - Free tier: 5 voice translations/day, 3 camera scans/day
-- Pro plans (USD; Google Play charges local currency at purchase): Trip Pass $2.99/week, Monthly $6.99, Annual $49.99
+- Pro plans (USD; Google Play charges local currency at purchase): Trip Pass $2.99/week, Monthly $6.99, Annual $59.99
 
 ## What WanderVox has that Google Translate does not
 - Dated trip planner with booking reminders and saved places
@@ -29,4 +29,4 @@
 - Terms of Service: https://wandervox.app/terms
 - Contact: hello@wandervox.app
 
-Last updated: 2026-04-30
+Last updated: 2026-05-08
