@@ -30,10 +30,10 @@
             "name": "WanderVox",
             "url": "https://wandervox.app"
         },
-        "dateModified": "2026-04-07"
+        "dateModified": "2026-05-13"
     }
     </script>
-    <meta name="dateModified" content="2026-04-07">
+    <meta name="dateModified" content="2026-05-13">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -307,20 +307,22 @@
     <!-- Content -->
     <main>
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: May 8, 2026</p>
+        <p class="last-updated">Last updated: May 13, 2026</p>
 
         <p class="intro">
             WanderVox ("we", "our", or "the app") is a mobile travel companion that provides voice translation, photo translation, cultural guides, and AI-curated local recommendations. Your privacy matters to us. This policy explains what data we collect, how we use it, and the choices available to you.
         </p>
 
         <h2>1. Information We Collect</h2>
-        <p>WanderVox does not require an account, login, or signup. We collect only the minimum data necessary to provide our services:</p>
+        <p>WanderVox starts without a required signup by creating a Firebase anonymous account. You can optionally link Google Sign-In. We collect only the minimum data necessary to provide our services:</p>
         <ul>
             <li><strong>Audio recordings</strong> &mdash; When you use voice translation, we capture audio from your device microphone. This audio is sent to our backend server for processing and is not stored permanently.</li>
             <li><strong>Camera and photos</strong> &mdash; When you use photo translation, we capture images from your device camera. These images are sent to our backend server for processing and are not stored permanently.</li>
             <li><strong>Approximate device location</strong> &mdash; If you grant GPS permission, we use your approximate location to provide relevant cultural recommendations and local suggestions. Location data is not stored on our servers.</li>
+            <li><strong>Account and entitlement data</strong> &mdash; Firebase provides a user ID for anonymous or Google-linked sign-in. If you link Google Sign-In, Firebase may receive your Google account identifier, such as email and display name. RevenueCat receives purchase identifiers and entitlement status for paid plans.</li>
+            <li><strong>Trip data on your device</strong> &mdash; Bookings, saved places, offline language packs, preferences, and reminders are stored locally on your device unless a feature explicitly sends data for processing.</li>
         </ul>
-        <p>We do not collect names, email addresses, phone numbers, or any other personal identifiers. No user account is required to use WanderVox.</p>
+        <p>We do not require you to provide your name, email address, or phone number to start using WanderVox. If you choose Google Sign-In or a paid plan, account and purchase identifiers are handled by Firebase, Google Play, and RevenueCat so the app can preserve identity and entitlement status.</p>
         <p>If you purchase a paid plan (Trip Pass at $2.99/week, Monthly at $6.99/month, or Annual at $59.99/year), payment is processed by Google Play. We do not receive or store your payment card details.</p>
 
         <hr class="section-divider">
@@ -337,10 +339,11 @@
         <hr class="section-divider">
 
         <h2>3. Data Processing and Third Parties</h2>
-        <p>To power our translation and recommendation features, we use the following third-party services:</p>
+        <p>To power our translation, recommendation, authentication, purchase, and app-delivery features, we use the following third-party services:</p>
         <ul>
             <li><strong>Google Gemini API</strong> &mdash; Audio recordings and photos are sent to Google's Gemini API for translation processing. Data is processed ephemerally and is not retained by our systems after the response is returned. Google's processing of this data is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-            <li><strong>Firebase</strong> &mdash; Used for app infrastructure and backend services. Firebase is operated by Google and is subject to Google's privacy terms.</li>
+            <li><strong>Firebase</strong> &mdash; Used for anonymous authentication, optional Google Sign-In, app infrastructure, and backend services. Firebase is operated by Google and is subject to Google's privacy terms.</li>
+            <li><strong>RevenueCat and Google Play</strong> &mdash; Used to manage paid plans, purchase status, and Pro entitlements. We do not receive or store payment card details.</li>
             <li><strong>Expo / EAS</strong> &mdash; Used for app delivery and over-the-air updates. Expo may collect basic device and crash information as part of its update service.</li>
         </ul>
         <p><strong>We do not sell your personal data to third parties.</strong></p>
@@ -352,7 +355,8 @@
         <ul>
             <li>Audio recordings and photos are transmitted to our server, forwarded to the Gemini API for processing, and discarded once the translation result is returned. They are <strong>not stored permanently</strong> on our servers or in any database.</li>
             <li>Location data is used in real time to provide recommendations and is not persisted on our servers.</li>
-            <li>Because no user accounts exist, there are no stored user profiles, history logs, or saved preferences on our servers.</li>
+            <li>Firebase and RevenueCat may retain account identifiers, purchase identifiers, and entitlement status so paid access can be restored and enforced.</li>
+            <li>Trip wallet items, saved places, preferences, offline language packs, and reminders are stored on your device. Removing the app or clearing app data removes local trip data from the device.</li>
         </ul>
 
         <hr class="section-divider">
@@ -370,7 +374,7 @@
         <h2>6. Your Rights</h2>
         <p>Depending on your jurisdiction, you may have the following rights regarding your data:</p>
         <ul>
-            <li><strong>Access and deletion</strong> &mdash; Because we do not store personal data permanently or maintain user accounts, there is no stored data to access or delete. If you have specific concerns, contact us at the email below.</li>
+            <li><strong>Access and deletion</strong> &mdash; Contact us if you want help with Firebase or entitlement data associated with your app account. Local trip data can be deleted by removing items in the app, clearing app data, or uninstalling WanderVox.</li>
             <li><strong>Withdraw permissions</strong> &mdash; You can revoke microphone, camera, or location permissions at any time through your device settings. The app will continue to function, though features requiring those permissions will be unavailable.</li>
             <li><strong>Opt out</strong> &mdash; You can stop all data processing simply by closing or uninstalling the app.</li>
         </ul>
