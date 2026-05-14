@@ -17,6 +17,16 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WanderVox - Voice &amp; Photo Translation Travel App">
 <meta name="twitter:description" content="Translate voice, menus, and signs in 49 languages. Trip planner and AI cultural guide across 51 destinations.">
+<meta name="msvalidate.01" content="62E862B45C2FF7F19FE7939A67BB5C6F">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BGN3J2QJFW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BGN3J2QJFW');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -40,7 +50,7 @@
       "about": { "@id": "https://wandervox.app/#app" },
       "description": "WanderVox translates voice, menus, and signs in 49 languages. Trip planner, cultural tips, and hidden gems across 51 destinations.",
       "datePublished": "2026-03-29T00:00:00Z",
-      "dateModified": "2026-05-13T00:00:00Z"
+      "dateModified": "2026-05-14T00:00:00Z"
     },
     {
       "@type": "Organization",
@@ -110,7 +120,7 @@
           "name": "What platforms is WanderVox available on?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "WanderVox is live on Android via Google Play. iOS is in development."
+            "text": "WanderVox is live on Android via Google Play, and iOS is coming soon."
           }
         },
         {
@@ -855,6 +865,22 @@ section { padding: 100px 0; }
 .badge-google-sub { font-size: 0.7rem; font-weight: 400; opacity: 0.6; display: block; text-align: left; }
 .badge-google-main { font-size: 1.05rem; font-weight: 600; display: block; text-align: left; }
 
+.badge-ios-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text);
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.badge-ios-icon { font-size: 1.6rem; line-height: 1; }
+
 /* ── FOOTER ── */
 footer {
   border-top: 1px solid var(--surface-border);
@@ -966,7 +992,7 @@ footer {
   <div class="container">
     <div class="hero-badge">
       <span class="hero-badge-dot" aria-hidden="true"></span>
-      Live on Google Play
+      Live on Google Play - iOS coming soon
     </div>
     <h1>Speak Any Language.<br>Explore Like a Local.</h1>
     <p class="hero-sub">Instantly discover local life in 49 languages across 51 destinations. Unlock real conversations, translate menus and signs, plan your trip by date, and find hidden gems your guidebook will never show you — free to start.</p>
@@ -1377,7 +1403,7 @@ footer {
       </div>
       <div class="faq-item">
         <h3>What platforms is WanderVox available on?</h3>
-        <p>WanderVox is live on Android via <a href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer">Google Play</a>. iOS is in development.</p>
+        <p>WanderVox is live on Android via <a href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer">Google Play</a>, and iOS is coming soon.</p>
       </div>
       <div class="faq-item">
         <h3>How does the Explore feature work?</h3>
@@ -1404,7 +1430,7 @@ footer {
   <div class="container">
     <div class="section-label">Get Started</div>
     <h2 class="section-title">Your Next Trip Deserves a Better Companion</h2>
-    <p class="section-desc">WanderVox is live on Android. Free to install, with an optional Pro tier when you need unlimited usage.</p>
+    <p class="section-desc">WanderVox is live on Android, with iOS coming soon. Free to install, with an optional Pro tier when you need unlimited usage.</p>
     <div class="download-badges">
       <a class="badge-google" href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer" aria-label="Get WanderVox on Google Play">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .61-.92zm1.393-.508L15.98 7.28l-2.87 2.87L5.003 1.306zm0 21.388l8.107-8.844-2.87-2.87L5.003 22.694zm12.571-9.9L20.2 12l-2.625 1.206-3.076-3.206 3.076-3.094z"/></svg>
@@ -1413,6 +1439,13 @@ footer {
           <span class="badge-google-main">Google Play</span>
         </div>
       </a>
+      <div class="badge-ios-soon" aria-label="WanderVox for iOS coming soon">
+        <span class="badge-ios-icon" aria-hidden="true">iOS</span>
+        <div>
+          <span class="badge-google-sub">COMING SOON ON</span>
+          <span class="badge-google-main">iOS</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1446,7 +1479,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">&copy; 2026 WanderVox. All rights reserved. A product by <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">Last updated: May 13, 2026</span></div>
+      <div class="footer-copy">&copy; 2026 WanderVox. All rights reserved. A product by <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">Last updated: May 14, 2026</span></div>
       <div class="footer-legal">
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
