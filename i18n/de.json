@@ -5,7 +5,8 @@
     "og_title": "WanderVox - Reise-App für Sprach- und Foto-Übersetzung",
     "og_description": "WanderVox übersetzt Sprache, Schilder und Speisekarten in 49 Sprachen. Reiseplaner, Kulturtipps und Geheimtipps für 51 Reiseziele.",
     "tw_description": "Übersetze Sprache, Speisekarten und Schilder in 49 Sprachen. Reiseplaner und KI-Kulturguide für 51 Reiseziele.",
-    "og_locale": "de_DE"
+    "og_locale": "de_DE",
+    "og_image": "https://wandervox.app/og-de.svg"
   },
   "nav": {
     "home": "Start",

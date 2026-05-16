@@ -1,11 +1,12 @@
 {
   "meta": {
-    "title": "WanderVox - Voice &amp; Photo Translation Travel App",
+    "title": "WanderVox: AI Voice and Photo Translator for Travelers",
     "description": "WanderVox translates voice, menus, and signs in 49 languages. Trip planner, cultural tips, and local finds across 51 destinations.",
-    "og_title": "WanderVox - Voice &amp; Photo Translation Travel App",
+    "og_title": "WanderVox: AI Voice and Photo Translator for Travelers",
     "og_description": "WanderVox translates voice, signs, and menus in 49 languages. Trip planner, cultural tips, and hidden gems across 51 destinations.",
     "tw_description": "Translate voice, menus, and signs in 49 languages. Trip planner and AI cultural guide across 51 destinations.",
-    "og_locale": "en_US"
+    "og_locale": "en_US",
+    "og_image": "https://wandervox.app/og.svg"
   },
   "nav": {
     "home": "Home",
