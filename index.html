@@ -14,9 +14,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wandervox.app/">
 <meta property="og:site_name" content="WanderVox">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://wandervox.app/og.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/svg+xml">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WanderVox - Voice &amp; Photo Translation Travel App">
 <meta name="twitter:description" content="Translate voice, menus, and signs in 49 languages. Trip planner and AI cultural guide across 51 destinations.">
+<meta name="twitter:image" content="https://wandervox.app/og.svg">
 <meta name="msvalidate.01" content="62E862B45C2FF7F19FE7939A67BB5C6F">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGN3J2QJFW"></script>
@@ -349,6 +354,24 @@ nav {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.ios-notify {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.ios-notify:hover {
+  color: var(--accent);
+  border-color: rgba(88,166,255,0.4);
+  background: var(--accent-glow);
+  opacity: 1;
 }
 
 .btn-primary {
@@ -1018,8 +1041,8 @@ footer {
       <span class="hero-badge-dot" aria-hidden="true"></span>
       Live on Google Play - iOS coming soon
     </div>
-    <h1>Speak Any Language.<br>Explore Like a Local.</h1>
-    <p class="hero-sub">Instantly discover local life in 49 languages across 51 destinations. Unlock real conversations, translate menus and signs, plan your trip by date, and find hidden gems your guidebook will never show you — free to start.</p>
+    <h1>Speak Any Language.<br>See What Tourists Miss.</h1>
+    <p class="hero-sub">Translate menus, plan your trip by date, and find the places guidebooks never show you — in 49 languages across 51 destinations. Free to start.</p>
     <div class="hero-ctas">
       <a href="#download" class="btn-primary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -1029,6 +1052,9 @@ footer {
         See How It Works
       </a>
     </div>
+    <a class="ios-notify" href="mailto:hello@wandervox.app?subject=Notify%20me%20when%20iOS%20launches&body=Add%20me%20to%20the%20iOS%20waitlist.">
+      On iPhone? Get notified at launch →
+    </a>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-num">49</div>
