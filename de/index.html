@@ -295,6 +295,54 @@ nav {
   padding: 4px;
 }
 
+/* ── NAV LANG DROPDOWN ── */
+.nav-lang { position: relative; }
+.nav-lang details > summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+  transition: color 0.2s;
+}
+.nav-lang details > summary::-webkit-details-marker,
+.nav-lang details > summary::marker { display: none; }
+.nav-lang details > summary:hover { color: var(--text); }
+.nav-lang details[open] > summary { color: var(--text); }
+.nav-lang-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background: rgba(26, 26, 46, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  list-style: none;
+  min-width: 160px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  z-index: 101;
+}
+.nav-lang-menu li { margin: 0; }
+.nav-lang-menu a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-lang-menu a:hover {
+  background: var(--accent-glow);
+  color: var(--accent);
+  opacity: 1;
+}
+
 /* ── HERO ── */
 .hero {
   padding: 140px 0 100px;
@@ -1014,6 +1062,18 @@ footer {
   .nav-links { display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: rgba(26,26,46,0.97); flex-direction: column; align-items: center; justify-content: center; gap: 28px; }
   .nav-links.open { display: flex; }
   .mobile-toggle { display: block; }
+  .nav-lang-menu {
+    position: static;
+    margin-top: 8px;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    border: none;
+    min-width: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .nav-lang details > summary { justify-content: center; }
   .hero { padding: 120px 0 70px; }
   .hero-ctas { flex-direction: column; align-items: center; }
   .btn-primary, .btn-secondary { width: 100%; max-width: 320px; justify-content: center; }
@@ -1040,8 +1100,19 @@ footer {
       <li><a href="/">Start</a></li>
       <li><a href="#features">Funktionen</a></li>
       <li><a href="#pricing">Preise</a></li>
-      <li><a href="/privacy">Datenschutz</a></li>
-      <li><a href="/terms">AGB</a></li>
+      <li class="nav-lang">
+        <details>
+          <summary aria-label="Change language">DE <span aria-hidden="true">▾</span></summary>
+          <ul class="nav-lang-menu">
+            <li><a href="/" hreflang="en" lang="en">English</a></li>
+            <li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li>
+            <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+            <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+            <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+            <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+          </ul>
+        </details>
+      </li>
       <li><a href="#download" class="nav-cta">Download</a></li>
     </ul>
   </div>
