@@ -939,11 +939,11 @@ footer {
 
 /* ── SHOWCASE VIDEO ── */
 .showcase {
-  padding: 40px 0 80px;
+  padding: 20px 0 60px;
 }
 .showcase-frame {
   position: relative;
-  max-width: 960px;
+  width: min(640px, 90vw, calc(70vh * 16 / 9));
   margin: 0 auto;
   border-radius: var(--radius);
   overflow: hidden;
@@ -966,7 +966,7 @@ footer {
   .faq-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero-stats { gap: 32px; }
-  .showcase { padding: 20px 0 60px; }
+  .showcase { padding: 16px 0 40px; }
 }
 
 @media (max-width: 640px) {
