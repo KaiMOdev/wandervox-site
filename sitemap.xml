@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wandervox.app/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
+  </url>
+  <url>
+    <loc>https://wandervox.app/nl/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
   </url>
   <url>
     <loc>https://wandervox.app/privacy</loc>
