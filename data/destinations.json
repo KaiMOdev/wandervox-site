@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "japan",
+    "name": "Japan",
+    "countryCode": "JP",
+    "language": "Japanese",
+    "languageCode": "ja",
+    "currency": "JPY",
+    "hero": "Translate Japanese menus, signs, train notices, and everyday conversations with a travel app built for Japan.",
+    "intro": "Japan is one of WanderVox's strongest travel use cases: local scripts, detailed food culture, train signage, and etiquette all matter. WanderVox keeps translation, culture, emergency basics, and trip context in one place.",
+    "highlights": [
+      "Translate Japanese speech, menus, signs, and transit notices",
+      "Hear key phrases spoken aloud before showing them to locals",
+      "Use cultural tips for restaurants, temples, trains, and public manners"
+    ],
+    "useCases": [
+      "Ordering from an izakaya menu or handwritten special board",
+      "Asking station staff for the right platform or ticket gate",
+      "Checking etiquette before visiting temples, ryokan, or local restaurants"
+    ],
+    "phrases": [
+      ["Thank you very much", "ありがとうございます"],
+      ["Where is this platform?", "このホームはどこですか？"],
+      ["I have a food allergy", "食物アレルギーがあります"]
+    ],
+    "metaTitle": "Japan Travel Translator App | Japanese Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Japan to translate Japanese speech, menus, signs, train notices, and travel phrases with camera translation, audio, and cultural tips."
+  },
+  {
+    "slug": "italy",
+    "name": "Italy",
+    "countryCode": "IT",
+    "language": "Italian",
+    "languageCode": "it",
+    "currency": "EUR",
+    "hero": "Translate Italian menus, train details, hotel questions, and local recommendations while traveling through Italy.",
+    "intro": "Italy rewards travelers who can understand menus, regional food terms, opening hours, and local transport details. WanderVox helps you move between translation, cultural notes, and trip planning without switching apps.",
+    "highlights": [
+      "Translate Italian voice conversations and typed text",
+      "Scan restaurant menus, museum signs, and ticket information",
+      "Keep bookings, reminders, currency, and saved places together"
+    ],
+    "useCases": [
+      "Understanding regional dishes before ordering",
+      "Asking hotel staff, drivers, or station workers practical questions",
+      "Finding local food, viewpoints, art, and nightlife beyond guidebooks"
+    ],
+    "phrases": [
+      ["A table for two, please", "Un tavolo per due, per favore"],
+      ["Where is the train station?", "Dov'e la stazione?"],
+      ["Can I pay by card?", "Posso pagare con carta?"]
+    ],
+    "metaTitle": "Italy Travel Translator App | Italian Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Italy to translate Italian conversations, menus, signs, bookings, and travel phrases with camera translation and trip tools."
+  },
+  {
+    "slug": "thailand",
+    "name": "Thailand",
+    "countryCode": "TH",
+    "language": "Thai",
+    "languageCode": "th",
+    "currency": "THB",
+    "hero": "Translate Thai speech, street food menus, signs, and travel questions with context for real trips in Thailand.",
+    "intro": "Thailand combines a non-Latin script, street food culture, local transport, and etiquette that can be difficult to handle with generic translation alone. WanderVox gives travelers a practical translation and culture layer.",
+    "highlights": [
+      "Translate Thai script on menus, signs, and notices",
+      "Use voice translation for markets, taxis, hotels, and restaurants",
+      "Check cultural tips for temples, greetings, bargaining, and food etiquette"
+    ],
+    "useCases": [
+      "Reading street food menus and ingredient notes",
+      "Showing a taxi card or translated destination",
+      "Asking about spice levels, allergies, or directions"
+    ],
+    "phrases": [
+      ["Hello", "สวัสดีครับ/ค่ะ"],
+      ["Not spicy, please", "ไม่เผ็ดครับ/ค่ะ"],
+      ["How much is this?", "อันนี้ราคาเท่าไหร่ครับ/คะ"]
+    ],
+    "metaTitle": "Thailand Travel Translator App | Thai Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Thailand to translate Thai speech, signs, menus, street food notes, taxi cards, and travel phrases with cultural context."
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "countryCode": "FR",
+    "language": "French",
+    "languageCode": "fr",
+    "currency": "EUR",
+    "hero": "Translate French menus, signs, reservations, and travel conversations with a companion app built for travelers.",
+    "intro": "France is easier when you can understand restaurant language, transit notices, opening hours, and polite local phrasing. WanderVox helps with translation, camera scanning, phrases, and trip details in one flow.",
+    "highlights": [
+      "Translate French speech, typed text, menus, and signs",
+      "Use phrase audio for polite restaurant and hotel interactions",
+      "Plan bookings and reminders around local time and currency"
+    ],
+    "useCases": [
+      "Understanding menus, daily specials, and dietary details",
+      "Asking for directions, check-in help, or ticket information",
+      "Finding local recommendations beyond the busiest tourist streets"
+    ],
+    "phrases": [
+      ["Do you speak English?", "Parlez-vous anglais ?"],
+      ["I have a reservation", "J'ai une reservation"],
+      ["The bill, please", "L'addition, s'il vous plait"]
+    ],
+    "metaTitle": "France Travel Translator App | French Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in France to translate French conversations, menus, signs, reservations, and travel phrases with camera translation and trip tools."
+  },
+  {
+    "slug": "germany",
+    "name": "Germany",
+    "countryCode": "DE",
+    "language": "German",
+    "languageCode": "de",
+    "currency": "EUR",
+    "hero": "Translate German menus, signs, train notices, hotel questions, and everyday travel conversations across Germany.",
+    "intro": "Germany is full of practical travel moments where clear language matters: train platforms, restaurant terms, hotel details, opening hours, and local rules. WanderVox keeps translation and trip context together.",
+    "highlights": [
+      "Translate German speech, typed text, menus, and signs",
+      "Scan train notices, restaurant menus, and local instructions",
+      "Keep bookings, reminders, saved places, and currency in one trip screen"
+    ],
+    "useCases": [
+      "Understanding train delays, platforms, and ticket information",
+      "Reading menus, ingredient notes, and opening hours",
+      "Asking hotel staff, drivers, or restaurant teams practical questions"
+    ],
+    "phrases": [
+      ["Do you speak English?", "Sprechen Sie Englisch?"],
+      ["Where is the train platform?", "Wo ist der Bahnsteig?"],
+      ["Can I pay by card?", "Kann ich mit Karte bezahlen?"]
+    ],
+    "metaTitle": "Germany Travel Translator App | German Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Germany to translate German conversations, menus, signs, train notices, and travel phrases with camera translation and trip tools."
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "countryCode": "ES",
+    "language": "Spanish",
+    "languageCode": "es",
+    "currency": "EUR",
+    "hero": "Translate Spanish conversations, tapas menus, signs, bookings, and travel questions across Spain.",
+    "intro": "Spain's food culture, opening hours, local neighborhoods, and regional travel details make context useful. WanderVox combines translation, camera scanning, local discovery, and trip planning.",
+    "highlights": [
+      "Translate Spanish voice conversations and typed text",
+      "Scan menus, signs, attraction notices, and booking details",
+      "Find food, hidden gems, art, nightlife, and local spots"
+    ],
+    "useCases": [
+      "Ordering tapas, checking ingredients, or asking about allergens",
+      "Getting help with transport, hotels, and local directions",
+      "Saving restaurants, activities, and reminders by trip date"
+    ],
+    "phrases": [
+      ["A table for two, please", "Una mesa para dos, por favor"],
+      ["Where is the metro?", "Donde esta el metro?"],
+      ["I am allergic to nuts", "Soy alergico/a a los frutos secos"]
+    ],
+    "metaTitle": "Spain Travel Translator App | Spanish Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Spain to translate Spanish conversations, tapas menus, signs, directions, and travel phrases with camera translation and trip tools."
+  },
+  {
+    "slug": "portugal",
+    "name": "Portugal",
+    "countryCode": "PT",
+    "language": "Portuguese",
+    "languageCode": "pt",
+    "currency": "EUR",
+    "hero": "Translate Portuguese menus, signs, local recommendations, and travel conversations across Portugal.",
+    "intro": "Portugal is full of small restaurants, viewpoints, transit details, and local food terms that are easier with context. WanderVox helps you translate and keep travel details organized.",
+    "highlights": [
+      "Translate Portuguese speech, typed text, menus, and signs",
+      "Use camera translation for restaurant boards and transport notices",
+      "Keep saved places, bookings, reminders, and currency in your trip screen"
+    ],
+    "useCases": [
+      "Understanding seafood menus and local pastry names",
+      "Asking for tram, train, or hotel information",
+      "Finding viewpoints, street food, art, and neighborhoods"
+    ],
+    "phrases": [
+      ["Good morning", "Bom dia"],
+      ["Can I have the menu?", "Pode trazer o menu?"],
+      ["Where is the train station?", "Onde fica a estacao de comboios?"]
+    ],
+    "metaTitle": "Portugal Travel Translator App | Portuguese Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Portugal to translate Portuguese conversations, menus, signs, local recommendations, and travel phrases with camera translation."
+  },
+  {
+    "slug": "mexico",
+    "name": "Mexico",
+    "countryCode": "MX",
+    "language": "Spanish",
+    "languageCode": "es",
+    "currency": "MXN",
+    "hero": "Translate Spanish menus, transport questions, street food details, and travel conversations in Mexico.",
+    "intro": "Mexico is easier to explore when you can ask clear questions, understand ingredients, and keep your itinerary organized. WanderVox combines Spanish translation with travel-focused context.",
+    "highlights": [
+      "Translate Spanish voice conversations, typed text, menus, and signs",
+      "Use dietary and allergen context when scanning menus",
+      "Find local food, neighborhoods, nature, nightlife, and cultural spots"
+    ],
+    "useCases": [
+      "Ordering street food and asking about ingredients",
+      "Getting transport, hotel, and tour information",
+      "Saving places and reminders while moving between cities"
+    ],
+    "phrases": [
+      ["How much does it cost?", "Cuanto cuesta?"],
+      ["No cilantro, please", "Sin cilantro, por favor"],
+      ["Where can I get a taxi?", "Donde puedo tomar un taxi?"]
+    ],
+    "metaTitle": "Mexico Travel Translator App | Spanish Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Mexico to translate Spanish conversations, street food menus, signs, transport questions, and travel phrases."
+  },
+  {
+    "slug": "greece",
+    "name": "Greece",
+    "countryCode": "GR",
+    "language": "Greek",
+    "languageCode": "el",
+    "currency": "EUR",
+    "hero": "Translate Greek menus, ferry details, signs, hotel questions, and travel conversations in Greece.",
+    "intro": "Greece has a different script, island transport details, local menus, and hospitality norms that benefit from more than generic translation. WanderVox adds travel context around the language layer.",
+    "highlights": [
+      "Translate Greek speech, menus, signs, and typed text",
+      "Use camera translation for ferry notices, menus, and local signs",
+      "Plan bookings, saved places, reminders, and currency in one app"
+    ],
+    "useCases": [
+      "Reading Greek menus and daily specials",
+      "Asking ferry, taxi, or hotel questions",
+      "Checking cultural tips for restaurants, churches, and local customs"
+    ],
+    "phrases": [
+      ["Hello", "Γεια σας"],
+      ["Where is the port?", "Πού είναι το λιμάνι;"],
+      ["The bill, please", "Τον λογαριασμό, παρακαλώ"]
+    ],
+    "metaTitle": "Greece Travel Translator App | Greek Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in Greece to translate Greek conversations, menus, signs, ferry details, and travel phrases with camera translation."
+  },
+  {
+    "slug": "south-korea",
+    "name": "South Korea",
+    "countryCode": "KR",
+    "language": "Korean",
+    "languageCode": "ko",
+    "currency": "KRW",
+    "hero": "Translate Korean menus, signs, transit details, and everyday travel conversations in South Korea.",
+    "intro": "South Korea is full of Hangul signs, food terms, transit systems, and etiquette moments where fast, contextual translation helps. WanderVox is built for those practical travel situations.",
+    "highlights": [
+      "Translate Korean speech, menus, signs, and typed text",
+      "Use camera translation for restaurants, transit, and shop notices",
+      "Hear key phrases aloud and keep cultural tips nearby"
+    ],
+    "useCases": [
+      "Ordering food and checking spice or ingredient details",
+      "Asking about metro lines, buses, taxis, and hotel check-in",
+      "Understanding etiquette for restaurants, shops, and public spaces"
+    ],
+    "phrases": [
+      ["Hello", "안녕하세요"],
+      ["Where is the subway station?", "지하철역이 어디예요?"],
+      ["I cannot eat spicy food", "매운 음식을 못 먹어요"]
+    ],
+    "metaTitle": "South Korea Travel Translator App | Korean Voice, Menu & Sign Translation",
+    "metaDescription": "Use WanderVox in South Korea to translate Korean speech, menus, signs, transit details, and travel phrases with camera translation."
+  }
+]

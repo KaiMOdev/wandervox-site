@@ -599,6 +599,99 @@ section { padding: 100px 0; }
   .mini-features { grid-template-columns: 1fr; }
 }
 
+.destination-preview {
+  background: var(--brand);
+  border-top: 1px solid var(--surface-border);
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.destination-card {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.destination-card:hover {
+  border-color: rgba(88,166,255,0.32);
+  transform: translateY(-3px);
+}
+
+.destination-card a {
+  display: block;
+  height: 100%;
+  padding: 26px;
+  color: var(--text);
+}
+
+.destination-card-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 100px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(88,166,255,0.22);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.destination-card h3 {
+  font-size: 1.24rem;
+  margin-bottom: 10px;
+}
+
+.destination-card p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.destination-card dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.destination-card dt {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.destination-card dd {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.destination-card-cta {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.destination-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
 /* ── COMPARISON TABLE ── */
 .comparison { background: var(--surface); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border); }
 
@@ -995,6 +1088,7 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .features-grid { grid-template-columns: 1fr; }
+  .destination-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: 1fr; gap: 40px; }
   .proof-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1025,6 +1119,7 @@ footer {
   .btn-primary, .btn-secondary { width: 100%; max-width: 320px; justify-content: center; }
   section { padding: 70px 0; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+  .destination-grid { grid-template-columns: 1fr; }
   .feature-card { padding: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
@@ -1045,6 +1140,7 @@ footer {
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="#features">Features</a></li>
+      <li><a href="/destinations">Destinations</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li class="nav-lang">
         <details>
@@ -1257,6 +1353,94 @@ footer {
         <h4>No Signup Needed</h4>
         <p>Install and go as a guest. Optional Google Sign-In keeps your identity if you reinstall.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="destination-preview" id="destinations">
+  <div class="container">
+    <div class="section-header-center">
+      <div class="section-label">Destination guides</div>
+      <h2 class="section-title">Travel translation guides for popular destinations</h2>
+      <p class="section-desc">Start with high-intent guides for the places travelers search before they install a translation app.</p>
+    </div>
+    <div class="destination-grid">
+
+      <article class="destination-card">
+        <a href="/destinations/japan" aria-label="View guide: Japan">
+          <span class="destination-card-code">JP</span>
+          <h3>Japan</h3>
+          <p>Translate Japanese menus, signs, train notices, and everyday conversations with a travel app built for Japan.</p>
+          <dl>
+            <div><dt>Language</dt><dd>Japanese</dd></div>
+            <div><dt>Currency</dt><dd>JPY</dd></div>
+          </dl>
+          <span class="destination-card-cta">View guide</span>
+        </a>
+      </article>
+      <article class="destination-card">
+        <a href="/destinations/italy" aria-label="View guide: Italy">
+          <span class="destination-card-code">IT</span>
+          <h3>Italy</h3>
+          <p>Translate Italian menus, train details, hotel questions, and local recommendations while traveling through Italy.</p>
+          <dl>
+            <div><dt>Language</dt><dd>Italian</dd></div>
+            <div><dt>Currency</dt><dd>EUR</dd></div>
+          </dl>
+          <span class="destination-card-cta">View guide</span>
+        </a>
+      </article>
+      <article class="destination-card">
+        <a href="/destinations/thailand" aria-label="View guide: Thailand">
+          <span class="destination-card-code">TH</span>
+          <h3>Thailand</h3>
+          <p>Translate Thai speech, street food menus, signs, and travel questions with context for real trips in Thailand.</p>
+          <dl>
+            <div><dt>Language</dt><dd>Thai</dd></div>
+            <div><dt>Currency</dt><dd>THB</dd></div>
+          </dl>
+          <span class="destination-card-cta">View guide</span>
+        </a>
+      </article>
+      <article class="destination-card">
+        <a href="/destinations/france" aria-label="View guide: France">
+          <span class="destination-card-code">FR</span>
+          <h3>France</h3>
+          <p>Translate French menus, signs, reservations, and travel conversations with a companion app built for travelers.</p>
+          <dl>
+            <div><dt>Language</dt><dd>French</dd></div>
+            <div><dt>Currency</dt><dd>EUR</dd></div>
+          </dl>
+          <span class="destination-card-cta">View guide</span>
+        </a>
+      </article>
+      <article class="destination-card">
+        <a href="/destinations/spain" aria-label="View guide: Spain">
+          <span class="destination-card-code">ES</span>
+          <h3>Spain</h3>
+          <p>Translate Spanish conversations, tapas menus, signs, bookings, and travel questions across Spain.</p>
+          <dl>
+            <div><dt>Language</dt><dd>Spanish</dd></div>
+            <div><dt>Currency</dt><dd>EUR</dd></div>
+          </dl>
+          <span class="destination-card-cta">View guide</span>
+        </a>
+      </article>
+      <article class="destination-card">
+        <a href="/destinations/portugal" aria-label="View guide: Portugal">
+          <span class="destination-card-code">PT</span>
+          <h3>Portugal</h3>
+          <p>Translate Portuguese menus, signs, local recommendations, and travel conversations across Portugal.</p>
+          <dl>
+            <div><dt>Language</dt><dd>Portuguese</dd></div>
+            <div><dt>Currency</dt><dd>EUR</dd></div>
+          </dl>
+          <span class="destination-card-cta">View guide</span>
+        </a>
+      </article>
+    </div>
+    <div class="destination-more">
+      <a href="/destinations" class="btn-secondary">View all destination guides</a>
     </div>
   </div>
 </section>
@@ -1562,6 +1746,7 @@ footer {
         <ul class="footer-links">
           <li><a href="/">Home</a></li>
           <li><a href="#features">Features</a></li>
+          <li><a href="/destinations">Destinations</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#download">Download</a></li>
         </ul>

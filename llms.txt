@@ -37,4 +37,17 @@
 - French: https://wandervox.app/fr/
 - Japanese: https://wandervox.app/ja/
 
+## Destination guides
+- Index: https://wandervox.app/destinations
+- Japan: https://wandervox.app/destinations/japan
+- Italy: https://wandervox.app/destinations/italy
+- Thailand: https://wandervox.app/destinations/thailand
+- France: https://wandervox.app/destinations/france
+- Germany: https://wandervox.app/destinations/germany
+- Spain: https://wandervox.app/destinations/spain
+- Portugal: https://wandervox.app/destinations/portugal
+- Mexico: https://wandervox.app/destinations/mexico
+- Greece: https://wandervox.app/destinations/greece
+- South Korea: https://wandervox.app/destinations/south-korea
+
 Last updated: 2026-05-16
