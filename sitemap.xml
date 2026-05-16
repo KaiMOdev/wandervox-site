@@ -8,15 +8,75 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wandervox.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wandervox.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
   </url>
   <url>
     <loc>https://wandervox.app/nl/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wandervox.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wandervox.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
+  </url>
+  <url>
+    <loc>https://wandervox.app/es/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wandervox.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wandervox.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
+  </url>
+  <url>
+    <loc>https://wandervox.app/de/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wandervox.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wandervox.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
+  </url>
+  <url>
+    <loc>https://wandervox.app/fr/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wandervox.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wandervox.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
+  </url>
+  <url>
+    <loc>https://wandervox.app/ja/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wandervox.app/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://wandervox.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wandervox.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wandervox.app/"/>
   </url>
   <url>

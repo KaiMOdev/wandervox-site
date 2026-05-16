@@ -29,4 +29,12 @@
 - Terms of Service: https://wandervox.app/terms
 - Contact: hello@wandervox.app
 
-Last updated: 2026-05-14
+## Localized homepages
+- English (default): https://wandervox.app/
+- Dutch: https://wandervox.app/nl/
+- Spanish: https://wandervox.app/es/
+- German: https://wandervox.app/de/
+- French: https://wandervox.app/fr/
+- Japanese: https://wandervox.app/ja/
+
+Last updated: 2026-05-16
