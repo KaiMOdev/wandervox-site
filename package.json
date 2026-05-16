@@ -4,7 +4,7 @@
   "description": "WanderVox marketing site - Voice & Photo Translation Travel App",
   "private": true,
   "scripts": {
-    "build": "node scripts/build.mjs",
+    "build:i18n": "node scripts/build.mjs",
     "test": "echo \"No tests for static site\" && exit 0"
   },
   "repository": {

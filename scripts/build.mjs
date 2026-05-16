@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 // Builds localized index.html files from src/template.html + i18n/<lang>.json.
-// Run via: npm run build
+// Run via: npm run build:i18n
+//
+// Script is named `build:i18n` (not `build`) intentionally so Vercel does NOT
+// auto-detect it and run it during deploy. The generated index.html and
+// nl/index.html files are committed to git and Vercel serves them as static
+// assets. Run the script locally after editing any i18n/*.json.
 //
 // English output goes to ./index.html (root).
 // Other locales go to ./<lang>/index.html.
