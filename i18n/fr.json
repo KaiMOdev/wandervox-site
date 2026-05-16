@@ -5,7 +5,8 @@
     "og_title": "WanderVox - App de Traduction Vocale et Photo pour Voyageurs",
     "og_description": "WanderVox traduit la voix, les panneaux et les menus en 49 langues. Planificateur, astuces culturelles et bonnes adresses pour 51 destinations.",
     "tw_description": "Traduis la voix, les menus et les panneaux en 49 langues. Planificateur de voyage et guide culturel IA pour 51 destinations.",
-    "og_locale": "fr_FR"
+    "og_locale": "fr_FR",
+    "og_image": "https://wandervox.app/og-fr.svg"
   },
   "nav": {
     "home": "Accueil",

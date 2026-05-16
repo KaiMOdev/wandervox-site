@@ -5,7 +5,8 @@
     "og_title": "WanderVox - Spraak- &amp; Fotovertaling Reisapp",
     "og_description": "WanderVox vertaalt spraak, borden en menu's in 49 talen. Reisplanner, culturele tips en verborgen pareltjes in 51 bestemmingen.",
     "tw_description": "Vertaal spraak, menu's en borden in 49 talen. Reisplanner en AI-cultuurgids voor 51 bestemmingen.",
-    "og_locale": "nl_NL"
+    "og_locale": "nl_NL",
+    "og_image": "https://wandervox.app/og-nl.svg"
   },
   "nav": {
     "home": "Home",

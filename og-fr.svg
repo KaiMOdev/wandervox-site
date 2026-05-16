@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#040814"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="70%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+    <linearGradient id="logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004D40"/>
+      <stop offset="100%" stop-color="#0A1628"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(80, 90)">
+    <rect width="72" height="72" rx="16" fill="url(#logo-bg)"/>
+    <circle cx="36" cy="32" r="18" fill="none" stroke="#00BFA6" stroke-width="3"/>
+    <ellipse cx="36" cy="32" rx="18" ry="3.5" fill="none" stroke="#00BFA6" stroke-width="1.8" opacity="0.5"/>
+    <ellipse cx="36" cy="32" rx="3.5" ry="18" fill="none" stroke="#00BFA6" stroke-width="1.8" opacity="0.5"/>
+    <line x1="36" y1="14" x2="36" y2="50" stroke="#00BFA6" stroke-width="1.4" opacity="0.4"/>
+    <line x1="18" y1="32" x2="54" y2="32" stroke="#00BFA6" stroke-width="1.4" opacity="0.4"/>
+    <text x="36" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#ffffff">W</text>
+  </g>
+  <text x="172" y="143" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="40" fill="#ffffff">WanderVox</text>
+
+  <g transform="translate(80, 240)">
+    <text font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="76" fill="url(#title)">
+      <tspan x="0" y="0">Parle toutes les langues.</tspan>
+      <tspan x="0" y="92">Vois l'invisible.</tspan>
+    </text>
+  </g>
+
+  <text x="80" y="478" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="26" fill="#a0a8b8">
+    Traduis, planifie et découvre les pépites cachées —
+  </text>
+  <text x="80" y="512" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="26" fill="#a0a8b8">
+    49 langues, 51 destinations.
+  </text>
+
+  <g transform="translate(80, 560)">
+    <rect width="14" height="14" rx="7" fill="#39d353"/>
+    <text x="26" y="12" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="18" fill="#58a6ff">Disponible sur Google Play</text>
+    <text x="280" y="12" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="18" fill="#6e7681">wandervox.app</text>
+  </g>
+</svg>
