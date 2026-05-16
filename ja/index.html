@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{meta.title}}</title>
+<title>WanderVox - 音声&写真翻訳 旅行アプリ</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta name="description" content="{{meta.description}}">
-<link rel="canonical" href="{{canonical_url}}">
-{{hreflang_block}}
+<meta name="description" content="WanderVoxは音声、メニュー、看板を49言語で翻訳。旅程プランナー、文化のヒント、51の旅先のローカル情報。">
+<link rel="canonical" href="https://wandervox.app/ja/">
+<link rel="alternate" hreflang="de" href="https://wandervox.app/de/">
+<link rel="alternate" hreflang="en" href="https://wandervox.app/">
+<link rel="alternate" hreflang="es" href="https://wandervox.app/es/">
+<link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/">
+<link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/">
+<link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/">
+<link rel="alternate" hreflang="x-default" href="https://wandervox.app/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="WanderVox">
-<meta property="og:title" content="{{meta.og_title}}">
-<meta property="og:description" content="{{meta.og_description}}">
+<meta property="og:title" content="WanderVox - 音声&写真翻訳 旅行アプリ">
+<meta property="og:description" content="WanderVoxは音声、看板、メニューを49言語で翻訳。旅程プランナー、文化のヒント、51の旅先の隠れた名所。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{canonical_url}}">
+<meta property="og:url" content="https://wandervox.app/ja/">
 <meta property="og:site_name" content="WanderVox">
-<meta property="og:locale" content="{{meta.og_locale}}">
+<meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://wandervox.app/og.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/svg+xml">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{meta.og_title}}">
-<meta name="twitter:description" content="{{meta.tw_description}}">
+<meta name="twitter:title" content="WanderVox - 音声&写真翻訳 旅行アプリ">
+<meta name="twitter:description" content="音声、メニュー、看板を49言語で翻訳。旅程プランナーとAI文化ガイド、51の旅先対応。">
 <meta name="twitter:image" content="https://wandervox.app/og.svg">
 <meta name="msvalidate.01" content="62E862B45C2FF7F19FE7939A67BB5C6F">
 <!-- Google tag (gtag.js) -->
@@ -1022,18 +1028,18 @@ footer {
 <!-- Navigation -->
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="{{nav.logo_aria}}">
+    <a href="/" class="nav-logo" aria-label="WanderVox ホーム">
       <img src="/favicon.svg" alt="WanderVox logo" width="28" height="28" class="nav-logo-img">
       WanderVox
     </a>
-    <button class="mobile-toggle" aria-label="{{nav.toggle_aria}}" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <button class="mobile-toggle" aria-label="ナビゲーションメニューを開く" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     <ul class="nav-links">
-      <li><a href="/">{{nav.home}}</a></li>
-      <li><a href="#features">{{nav.features}}</a></li>
-      <li><a href="#pricing">{{nav.pricing}}</a></li>
-      <li><a href="/privacy">{{nav.privacy}}</a></li>
-      <li><a href="/terms">{{nav.terms}}</a></li>
-      <li><a href="#download" class="nav-cta">{{nav.download}}</a></li>
+      <li><a href="/">ホーム</a></li>
+      <li><a href="#features">機能</a></li>
+      <li><a href="#pricing">料金</a></li>
+      <li><a href="/privacy">プライバシー</a></li>
+      <li><a href="/terms">利用規約</a></li>
+      <li><a href="#download" class="nav-cta">ダウンロード</a></li>
     </ul>
   </div>
 </nav>
@@ -1045,34 +1051,34 @@ footer {
   <div class="container">
     <div class="hero-badge">
       <span class="hero-badge-dot" aria-hidden="true"></span>
-      {{hero.badge}}
+      Google Playで配信中 - iOS版近日公開
     </div>
-    <h1>{{hero.h1_line1}}<br>{{hero.h1_line2}}</h1>
-    <p class="hero-sub">{{hero.sub}}</p>
+    <h1>どんな言葉でも、話せる。<br>観光客が見逃す体験へ。</h1>
+    <p class="hero-sub">メニューを翻訳、日付ごとに旅を計画、ガイドブックに載らない場所を発見 ― 49言語・51の旅先で。無料でスタート。</p>
     <div class="hero-ctas">
       <a href="#download" class="btn-primary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        {{hero.cta_play}}
+        Google Playで入手
       </a>
       <a href="#features" class="btn-secondary">
-        {{hero.cta_how}}
+        使い方を見る
       </a>
     </div>
-    <a class="ios-notify" href="mailto:hello@wandervox.app?subject={{hero.ios_notify_subject}}&body={{hero.ios_notify_body}}">
-      {{hero.ios_notify}}
+    <a class="ios-notify" href="mailto:hello@wandervox.app?subject=iOS%E7%89%88%E3%81%AE%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%82%92%E9%80%9A%E7%9F%A5&body=iOS%E3%81%AE%E3%82%A6%E3%82%A7%E3%82%A4%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AB%E5%8A%A0%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82">
+      iPhone? リリース時にお知らせ →
     </a>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num">{{hero.stat_langs_num}}</div>
-        <div class="hero-stat-label">{{hero.stat_langs_label}}</div>
+        <div class="hero-stat-num">49</div>
+        <div class="hero-stat-label">言語</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">{{hero.stat_dest_num}}</div>
-        <div class="hero-stat-label">{{hero.stat_dest_label}}</div>
+        <div class="hero-stat-num">51</div>
+        <div class="hero-stat-label">旅先</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">{{hero.stat_free_num}}</div>
-        <div class="hero-stat-label">{{hero.stat_free_label}}</div>
+        <div class="hero-stat-num">無料</div>
+        <div class="hero-stat-label">で開始</div>
       </div>
     </div>
   </div>
@@ -1082,9 +1088,9 @@ footer {
 <section class="showcase">
   <div class="container">
     <div class="showcase-frame">
-      <video controls preload="metadata" playsinline aria-label="{{video.aria}}">
+      <video controls preload="metadata" playsinline aria-label="WanderVox ローンチビデオ">
         <source src="/videos/wandervox_launch_video_1080p.mp4" type="video/mp4">
-        {{video.fallback}}
+        お使いのブラウザは埋め込み動画に対応していません。
       </video>
     </div>
   </div>
@@ -1094,142 +1100,142 @@ footer {
 <section id="features">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{features.label}}</div>
-      <h2 class="section-title">{{features.title}}</h2>
-      <p class="section-desc">{{features.desc}}</p>
+      <div class="section-label">機能</div>
+      <h2 class="section-title">海外で必要なものすべてを、ポケットに</h2>
+      <p class="section-desc">WanderVoxは49言語のリアルタイム翻訳、カメラによるテキスト認識、51の旅先の文化ガイド、AIによるローカルおすすめ、日付付き旅程プランナーを1つにまとめた旅のアプリです。</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon feature-icon--blue" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
         </div>
-        <h3>{{features.voice_h3}}</h3>
-        <p class="feature-answer">{{features.voice_summary}}</p>
-        <p>{{features.voice_body}}</p>
+        <h3>音声翻訳はどう動きますか?</h3>
+        <p class="feature-answer">音声翻訳は、瞬時の音声-音声翻訳です。タップして自分の言語で話すと、相手の言語で読み上げられます。</p>
+        <p>タップして録音、即座に音声-音声翻訳。地元の人と本物の会話を楽しんだり、市場で交渉したり、道を尋ねたり ― 言葉の壁なしで。</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.voice_tag1}}</span>
-          <span class="feature-tag">{{features.voice_tag2}}</span>
-          <span class="feature-tag">{{features.voice_tag3}}</span>
+          <span class="feature-tag">49言語</span>
+          <span class="feature-tag">双方向</span>
+          <span class="feature-tag">自然な音声</span>
         </div>
       </div>
       <div class="feature-card feature-card--green">
         <div class="feature-icon feature-icon--green" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
         </div>
-        <h3>{{features.camera_h3}}</h3>
-        <p class="feature-answer">{{features.camera_summary}}</p>
-        <p>{{features.camera_body}}</p>
+        <h3>スマートカメラは何を翻訳できますか?</h3>
+        <p class="feature-answer">スマートカメラはAIで、1枚の写真からメニュー、看板、書類を検出して翻訳します。</p>
+        <p>看板、レストランのメニュー、書類にカメラを向けるだけ。WanderVoxが即座に言語を判定し、テキストを翻訳して、見落としを防ぐ補足コメントも追加します。</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.camera_tag1}}</span>
-          <span class="feature-tag">{{features.camera_tag2}}</span>
-          <span class="feature-tag">{{features.camera_tag3}}</span>
+          <span class="feature-tag">カメラ・ギャラリー</span>
+          <span class="feature-tag">言語自動判定</span>
+          <span class="feature-tag">文脈ノート</span>
         </div>
       </div>
       <div class="feature-card feature-card--green">
         <div class="feature-icon feature-icon--green" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
         </div>
-        <h3>{{features.culture_h3}}</h3>
-        <p class="feature-answer">{{features.culture_summary}}</p>
-        <p>{{features.culture_body}}</p>
+        <h3>どんな文化のヒントが得られますか?</h3>
+        <p class="feature-answer">文化ガイドは、51の旅先のローカルフレーズ、マナー、ジェスチャー、食ガイドをまとめてオフラインで使えます。</p>
+        <p>現地に着く前に大切なフレーズ、マナーのコツ、文化的な背景を学べます。気まずい失敗を避け、現地の慣習に敬意を ― オフライン保存で素早く呼び出せます。</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.culture_tag1}}</span>
-          <span class="feature-tag">{{features.culture_tag2}}</span>
-          <span class="feature-tag">{{features.culture_tag3}}</span>
+          <span class="feature-tag">ローカルフレーズ</span>
+          <span class="feature-tag">マナー</span>
+          <span class="feature-tag">オフライン</span>
         </div>
       </div>
       <div class="feature-card">
         <div class="feature-icon feature-icon--blue" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
         </div>
-        <h3>{{features.explore_h3}}</h3>
-        <p class="feature-answer">{{features.explore_summary}}</p>
-        <p>{{features.explore_body}}</p>
+        <h3>Exploreはどうやって隠れた名所を見つけますか?</h3>
+        <p class="feature-answer">ExploreはAIで超ローカルなおすすめを引き出します ― 屋台、秘密の絶景スポット、地元の夜遊びまで、多くの観光客が知らない場所を。</p>
+        <p>観光客が見逃すものを発見。AIキュレーションで、屋台、隠れた名所、ナイトライフ、アート、自然、くつろぎスポットなど、現在地に合わせたおすすめを表示。</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.explore_tag1}}</span>
-          <span class="feature-tag">{{features.explore_tag2}}</span>
-          <span class="feature-tag">{{features.explore_tag3}}</span>
-          <span class="feature-tag">{{features.explore_tag4}}</span>
+          <span class="feature-tag">屋台</span>
+          <span class="feature-tag">隠れた名所</span>
+          <span class="feature-tag">ナイトライフ&アート</span>
+          <span class="feature-tag">自然</span>
         </div>
       </div>
       <div class="feature-card feature-card--green">
         <div class="feature-icon feature-icon--green" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="14" x2="10" y2="14"></line><line x1="14" y1="14" x2="16" y2="14"></line><line x1="8" y1="18" x2="10" y2="18"></line></svg>
         </div>
-        <h3>{{features.trip_h3}}</h3>
-        <p class="feature-answer">{{features.trip_summary}}</p>
-        <p>{{features.trip_body}}</p>
+        <h3>旅程プランナーは何ができますか?</h3>
+        <p class="feature-answer">旅程プランナーは予約、場所、リマインダーを1つの日付付き旅程にまとめます。</p>
+        <p>フライト、ホテル、レストラン、アクティビティを追加。WanderVoxが日付ごとに整理し、通貨をリアルタイム換算、各送迎・チェックインの前にリマインドします。保存した場所も同じ画面で予約と並べて確認できます。</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.trip_tag1}}</span>
-          <span class="feature-tag">{{features.trip_tag2}}</span>
-          <span class="feature-tag">{{features.trip_tag3}}</span>
-          <span class="feature-tag">{{features.trip_tag4}}</span>
+          <span class="feature-tag">日付付き旅程</span>
+          <span class="feature-tag">通貨換算</span>
+          <span class="feature-tag">予約リマインダー</span>
+          <span class="feature-tag">保存した場所</span>
         </div>
       </div>
       <div class="feature-card">
         <div class="feature-icon feature-icon--blue" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </div>
-        <h3>{{features.offline_h3}}</h3>
-        <p class="feature-answer">{{features.offline_summary}}</p>
-        <p>{{features.offline_body}}</p>
+        <h3>WanderVoxはオフラインで動きますか?</h3>
+        <p class="feature-answer">Androidユーザーは、端末上のML Kitで入力テキストを完全オフライン翻訳できます。</p>
+        <p>言語を1度ダウンロードすれば、電波なしでテキスト翻訳が可能 ― 飛行機、地下鉄、圏外でも安心。音声・カメラ翻訳には接続が必要です。</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.offline_tag1}}</span>
-          <span class="feature-tag">{{features.offline_tag2}}</span>
-          <span class="feature-tag">{{features.offline_tag3}}</span>
-          <span class="feature-tag">{{features.offline_tag4}}</span>
+          <span class="feature-tag">Android</span>
+          <span class="feature-tag">端末上のML Kit</span>
+          <span class="feature-tag">電波不要</span>
+          <span class="feature-tag">入力テキスト</span>
         </div>
       </div>
     </div>
     <div class="mini-features-header">
-      <h3>{{mini.title}}</h3>
-      <p>{{mini.desc}}</p>
+      <h3>さらに、しっかり動く機能</h3>
+      <p>実際に旅をする人がつくったとわかる、小さなこだわり。</p>
     </div>
     <div class="mini-features">
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">💬</div>
-        <h4>{{mini.conv_h}}</h4>
-        <p>{{mini.conv_p}}</p>
+        <h4>会話モード</h4>
+        <p>どちらの言語を話しているかを自動判定し、自然な双方向翻訳。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🔊</div>
-        <h4>{{mini.audio_h}}</h4>
-        <p>{{mini.audio_p}}</p>
+        <h4>フレーズ音声</h4>
+        <p>フレーズをタップすると現地の言語で読み上げられます。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🚕</div>
-        <h4>{{mini.taxi_h}}</h4>
-        <p>{{mini.taxi_p}}</p>
+        <h4>タクシーカード</h4>
+        <p>ドライバーに目的地を現地の言語と文字で表示 ― 住所もそのまま。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🆘</div>
-        <h4>{{mini.sos_h}}</h4>
-        <p>{{mini.sos_p}}</p>
+        <h4>緊急情報</h4>
+        <p>対応エリアの緊急連絡先と安全フレーズ、世界共通のデフォルト付き。常に無料。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🥗</div>
-        <h4>{{mini.diet_h}}</h4>
-        <p>{{mini.diet_p}}</p>
+        <h4>食事の好み</h4>
+        <p>アレルゲンや制限を保存。カメラがメニュー上の該当する項目をマークします。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">⏰</div>
-        <h4>{{mini.remind_h}}</h4>
-        <p>{{mini.remind_p}}</p>
+        <h4>予約リマインダー</h4>
+        <p>チェックイン、送迎、アクティビティ前にローカル通知 ― プッシュサーバー不要。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">💱</div>
-        <h4>{{mini.curr_h}}</h4>
-        <p>{{mini.curr_p}}</p>
+        <h4>通貨換算</h4>
+        <p>現在地に合わせて、旅画面でリアルタイム為替を表示。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🕒</div>
-        <h4>{{mini.clock_h}}</h4>
-        <p>{{mini.clock_p}}</p>
+        <h4>デュアル時計</h4>
+        <p>出発地と旅先の時刻を並べて、常にヘッダーに表示。</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">👤</div>
-        <h4>{{mini.nosignup_h}}</h4>
-        <p>{{mini.nosignup_p}}</p>
+        <h4>サインアップ不要</h4>
+        <p>インストールしてゲストとしてすぐ開始。Googleサインインは任意で、再インストール後もアイデンティティを保持。</p>
       </div>
     </div>
   </div>
@@ -1239,75 +1245,75 @@ footer {
 <section class="comparison">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{comparison.label}}</div>
-      <h2 class="section-title">{{comparison.title}}</h2>
-      <p class="section-desc">{{comparison.desc}}</p>
+      <div class="section-label">WanderVoxを選ぶ理由</div>
+      <h2 class="section-title">翻訳アプリ以上の旅の相棒</h2>
+      <p class="section-desc">WanderVoxは複数のアプリを1つに置き換える旅のパートナー。個別ツールと比べてどう違うかをまとめました。</p>
     </div>
     <div class="comparison-table-wrap">
       <!-- Comparison verified against Google Translate for Android on 2026-04-19 -->
       <table class="comparison-table">
         <thead>
           <tr>
-            <th>{{comparison.th_feature}}</th>
-            <th>{{comparison.th_wv}}</th>
-            <th>{{comparison.th_gt}}</th>
+            <th>機能</th>
+            <th>WanderVox</th>
+            <th>Google翻訳</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{{comparison.voice_feat}}</td>
-            <td>{{comparison.voice_wv}}</td>
-            <td>{{comparison.voice_gt}}</td>
+            <td>音声翻訳</td>
+            <td>タップして話す、返答を自動再生</td>
+            <td>手動マイクボタン、自動再生なし</td>
           </tr>
           <tr>
-            <td>{{comparison.menu_feat}}</td>
-            <td>{{comparison.menu_wv}}</td>
-            <td>{{comparison.menu_gt}}</td>
+            <td>メニュー翻訳</td>
+            <td>アレルゲン、食事タグ、料理説明を検出</td>
+            <td>プレーンテキスト翻訳のみ</td>
           </tr>
           <tr>
-            <td>{{comparison.sign_feat}}</td>
-            <td>{{comparison.sign_wv}}</td>
-            <td>{{comparison.sign_gt}}</td>
+            <td>看板翻訳</td>
+            <td>翻訳 + 文化的文脈を解説</td>
+            <td>テキストのみ翻訳</td>
           </tr>
           <tr>
-            <td>{{comparison.rec_feat}}</td>
-            <td>{{comparison.rec_wv}}</td>
-            <td>{{comparison.rec_gt}}</td>
+            <td>ローカルおすすめ</td>
+            <td>AIキュレーション: 屋台、隠れた名所、ナイトライフ</td>
+            <td>なし</td>
           </tr>
           <tr>
-            <td>{{comparison.sos_feat}}</td>
-            <td>{{comparison.sos_wv}}</td>
-            <td>{{comparison.sos_gt}}</td>
+            <td>緊急情報</td>
+            <td>現地の緊急連絡先、安全フレーズ、常に無料</td>
+            <td>なし</td>
           </tr>
           <tr>
-            <td>{{comparison.phrases_feat}}</td>
-            <td>{{comparison.phrases_wv}}</td>
-            <td>{{comparison.phrases_gt}}</td>
+            <td>旅行フレーズ</td>
+            <td>国別キュレーション、発音オーディオ付き</td>
+            <td>汎用フレーズ集、オーディオは限定的</td>
           </tr>
           <tr>
-            <td>{{comparison.diet_feat}}</td>
-            <td>{{comparison.diet_wv}}</td>
-            <td>{{comparison.diet_gt}}</td>
+            <td>アレルゲン検出</td>
+            <td>メニューのアレルゲン・食事制限の競合を表示</td>
+            <td>なし</td>
           </tr>
           <tr>
-            <td>{{comparison.taxi_feat}}</td>
-            <td>{{comparison.taxi_wv}}</td>
-            <td>{{comparison.taxi_gt}}</td>
+            <td>タクシーカード</td>
+            <td>現地の言語・文字で目的地表示</td>
+            <td>なし</td>
           </tr>
           <tr>
-            <td>{{comparison.trip_feat}}</td>
-            <td>{{comparison.trip_wv}}</td>
-            <td>{{comparison.trip_gt}}</td>
+            <td>旅程と予約</td>
+            <td>日付付きプランナー、リマインダー、通貨、保存場所</td>
+            <td>なし</td>
           </tr>
           <tr>
-            <td>{{comparison.culture_feat}}</td>
-            <td>{{comparison.culture_wv}}</td>
-            <td>{{comparison.culture_gt}}</td>
+            <td>文化ガイド</td>
+            <td>51の旅先のフレーズ、マナー、食 ― オフライン対応</td>
+            <td>汎用フレーズ集、文化的文脈なし</td>
           </tr>
           <tr>
-            <td>{{comparison.built_feat}}</td>
-            <td>{{comparison.built_wv}}</td>
-            <td>{{comparison.built_gt}}</td>
+            <td>旅人のために設計</td>
+            <td>実際の旅のシーンに合わせて設計</td>
+            <td>汎用の翻訳ツール</td>
           </tr>
         </tbody>
       </table>
@@ -1319,25 +1325,25 @@ footer {
 <section id="how-it-works">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{how.label}}</div>
-      <h2 class="section-title">{{how.title}}</h2>
-      <p class="section-desc">{{how.desc}}</p>
+      <div class="section-label">使い方</div>
+      <h2 class="section-title">数秒でコミュニケーション開始</h2>
+      <p class="section-desc">WanderVoxは、面倒な設定なしで素早く信頼できる翻訳と現地情報がほしい旅人のためのアプリです。</p>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-number">1</div>
-        <h3>{{how.s1_h}}</h3>
-        <p>{{how.s1_p}}</p>
+        <h3>旅先を選ぶ</h3>
+        <p>行き先を選択。WanderVoxがその地域の文化フレーズ、ヒント、ローカルおすすめを読み込みます。</p>
       </div>
       <div class="step">
         <div class="step-number">2</div>
-        <h3>{{how.s2_h}}</h3>
-        <p>{{how.s2_p}}</p>
+        <h3>話す、または撮る</h3>
+        <p>マイクをタップしてリアルタイム翻訳、または文字にカメラを向ける。2秒以内に結果が表示されます。</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
-        <h3>{{how.s3_h}}</h3>
-        <p>{{how.s3_p}}</p>
+        <h3>ローカル目線で楽しむ</h3>
+        <p>現在地に合わせてAIキュレーションされた屋台、隠れた名所、ナイトライフ、文化体験をブラウズ。</p>
       </div>
     </div>
   </div>
@@ -1347,41 +1353,41 @@ footer {
 <section class="proof">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{proof.label}}</div>
-      <h2 class="section-title">{{proof.title}}</h2>
-      <p class="section-desc">{{proof.desc}}</p>
+      <div class="section-label">旅人の声</div>
+      <h2 class="section-title">世界中の旅人に選ばれています</h2>
+      <p class="section-desc">WanderVoxを使って言葉の壁を超え、隠れた体験を見つけた旅人からのリアルな声。</p>
     </div>
     <div class="proof-grid">
       <div class="proof-card">
-        <div class="proof-stars" aria-label="{{proof.stars_aria}}">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="proof-text">{{proof.q1}}</p>
+        <div class="proof-stars" aria-label="5つ星のうち5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-text">「東京の小さな路地で、WanderVoxが手書きのメニューを翻訳してくれたおかげで、旅で一番おいしい食事に出会えました。ほかのアプリでは無理だったと思います。」</p>
         <div class="proof-author">
           <div class="proof-avatar" aria-hidden="true">MR</div>
           <div>
-            <div class="proof-name">{{proof.name1}}</div>
-            <div class="proof-location">{{proof.loc1}}</div>
+            <div class="proof-name">Marcus R.</div>
+            <div class="proof-location">東京、日本</div>
           </div>
         </div>
       </div>
       <div class="proof-card">
-        <div class="proof-stars" aria-label="{{proof.stars_aria}}">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="proof-text">{{proof.q2}}</p>
+        <div class="proof-stars" aria-label="5つ星のうち5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-text">「モロッコで何度も気まずい場面を避けられたのは、文化のヒントのおかげ。現地の習慣を事前に知っているだけで、本当に違いました。」</p>
         <div class="proof-author">
           <div class="proof-avatar" aria-hidden="true">SL</div>
           <div>
-            <div class="proof-name">{{proof.name2}}</div>
-            <div class="proof-location">{{proof.loc2}}</div>
+            <div class="proof-name">Sarah L.</div>
+            <div class="proof-location">マラケシュ、モロッコ</div>
           </div>
         </div>
       </div>
       <div class="proof-card">
-        <div class="proof-stars" aria-label="{{proof.stars_aria}}">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="proof-text">{{proof.q3}}</p>
+        <div class="proof-stars" aria-label="5つ星のうち5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-text">「Exploreでガイドブックに載っていないルーフトップバーやストリートアートツアーを見つけました。Googleが知らないことを知っているアプリです。」</p>
         <div class="proof-author">
           <div class="proof-avatar" aria-hidden="true">JK</div>
           <div>
-            <div class="proof-name">{{proof.name3}}</div>
-            <div class="proof-location">{{proof.loc3}}</div>
+            <div class="proof-name">James K.</div>
+            <div class="proof-location">リスボン、ポルトガル</div>
           </div>
         </div>
       </div>
@@ -1393,58 +1399,58 @@ footer {
 <section id="pricing">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{pricing.label}}</div>
-      <h2 class="section-title">{{pricing.title}}</h2>
-      <p class="section-desc">{{pricing.desc}}</p>
+      <div class="section-label">料金</div>
+      <h2 class="section-title">無料で始めて、旅のときだけPro</h2>
+      <p class="section-desc">アカウント不要。必要なときに即アップグレード。</p>
     </div>
     <div class="pricing-grid">
       <div class="pricing-card">
-        <div class="pricing-name">{{pricing.free_name}}</div>
-        <div class="pricing-price">{{pricing.free_price}}</div>
-        <div class="pricing-period">{{pricing.free_period}}</div>
+        <div class="pricing-name">無料</div>
+        <div class="pricing-price">$0</div>
+        <div class="pricing-period">ずっと</div>
         <ul class="pricing-features">
-          <li>{{pricing.free_f1}}</li>
-          <li>{{pricing.free_f2}}</li>
-          <li>{{pricing.free_f3}}</li>
-          <li>{{pricing.free_f4}}</li>
-          <li>{{pricing.free_f5}}</li>
+          <li>音声翻訳 5回 / 日</li>
+          <li>カメラ翻訳 3回 / 日</li>
+          <li>基本の文化フレーズ</li>
+          <li>Explore 3件 / カテゴリ</li>
+          <li>緊急情報(常に無料)</li>
         </ul>
       </div>
       <div class="pricing-card pricing-featured">
-        <div class="pricing-badge">{{pricing.popular}}</div>
-        <div class="pricing-name">{{pricing.trip_name}}</div>
-        <div class="pricing-price">{{pricing.trip_price}}</div>
-        <div class="pricing-period">{{pricing.trip_period}}</div>
+        <div class="pricing-badge">人気No.1</div>
+        <div class="pricing-name">Trip Pass</div>
+        <div class="pricing-price">$2.99</div>
+        <div class="pricing-period">/ 週</div>
         <ul class="pricing-features">
-          <li>{{pricing.trip_f1}}</li>
-          <li>{{pricing.trip_f2}}</li>
-          <li>{{pricing.trip_f3}}</li>
-          <li>{{pricing.trip_f4}}</li>
-          <li>{{pricing.trip_f5}}</li>
-          <li>{{pricing.trip_f6}}</li>
+          <li>音声翻訳 無制限</li>
+          <li>スマートカメラ 無制限</li>
+          <li>フレーズ音声再生</li>
+          <li>すべての文化ヒント</li>
+          <li>Explore 無制限</li>
+          <li>タクシーカード</li>
         </ul>
       </div>
       <div class="pricing-card">
-        <div class="pricing-name">{{pricing.monthly_name}}</div>
-        <div class="pricing-price">{{pricing.monthly_price}}</div>
-        <div class="pricing-period">{{pricing.monthly_period}}</div>
+        <div class="pricing-name">月額</div>
+        <div class="pricing-price">$6.99</div>
+        <div class="pricing-period">/ 月</div>
         <ul class="pricing-features">
-          <li>{{pricing.monthly_f1}}</li>
-          <li>{{pricing.monthly_f2}}</li>
+          <li>Trip Passのすべて</li>
+          <li>よく旅する方に最適</li>
         </ul>
       </div>
       <div class="pricing-card">
-        <div class="pricing-badge">{{pricing.best_value}}</div>
-        <div class="pricing-name">{{pricing.annual_name}}</div>
-        <div class="pricing-price">{{pricing.annual_price}}</div>
-        <div class="pricing-period">{{pricing.annual_period}}</div>
+        <div class="pricing-badge">おすすめ</div>
+        <div class="pricing-name">年額</div>
+        <div class="pricing-price">$59.99</div>
+        <div class="pricing-period">/ 年</div>
         <ul class="pricing-features">
-          <li>{{pricing.annual_f1}}</li>
-          <li>{{pricing.annual_f2}}</li>
+          <li>Trip Passのすべて</li>
+          <li>月額より28%お得</li>
         </ul>
       </div>
     </div>
-    <p class="pricing-footnote">{{pricing.footnote}}</p>
+    <p class="pricing-footnote">価格はUSD表示。Google Playは購入時に現地通貨で請求します。</p>
   </div>
 </section>
 
@@ -1452,42 +1458,42 @@ footer {
 <section id="faq">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{faq.label}}</div>
-      <h2 class="section-title">{{faq.title}}</h2>
-      <p class="section-desc">{{faq.desc}}</p>
+      <div class="section-label">よくある質問</div>
+      <h2 class="section-title">よくある質問</h2>
+      <p class="section-desc">WanderVoxの機能、対応状況、料金に関する簡潔な回答。</p>
     </div>
     <div class="faq-grid">
       <div class="faq-item">
-        <h3>{{faq.q1}}</h3>
-        <p>{{faq.a1}}</p>
+        <h3>WanderVoxは何言語・何の旅先に対応していますか?</h3>
+        <p>WanderVoxはヨーロッパ、アジア、中東、アフリカ、アメリカ大陸の51の旅先について、49言語の音声-音声翻訳とキュレーション済みの文化コンテンツを提供します。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q2}}</h3>
-        <p>{{faq.a2}}</p>
+        <h3>WanderVoxは無料で使えますか?</h3>
+        <p>はい。WanderVoxは1日に音声翻訳5回、カメラ翻訳3回まで無料です。もっと使いたい方は、Trip Pass ($2.99/週)、Monthly ($6.99/月)、Annual ($59.99/年) で無制限利用が可能です。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q3}}</h3>
-        <p>{{faq.a3}}</p>
+        <h3>WanderVoxは写真から看板やメニューを翻訳できますか?</h3>
+        <p>はい。看板、メニュー、書類、印刷されたテキストにカメラを向けると、WanderVoxが即座に言語を判定し、文脈ノート付きであなたの言語に翻訳します。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q4}}</h3>
-        <p>{{faq.a4}}</p>
+        <h3>WanderVoxはどのプラットフォームで使えますか?</h3>
+        <p>WanderVoxは<a href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer">Google Play</a>のAndroid版で配信中です。iOS版も近日公開予定です。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q5}}</h3>
-        <p>{{faq.a5}}</p>
+        <h3>Explore機能はどう動きますか?</h3>
+        <p>ExploreはAIで、現在地と興味に合わせたローカルおすすめをキュレーション。観光客がたどり着けない屋台、隠れた名所、ナイトライフ、アート、自然、リラクゼーションスポットを表示します。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q6}}</h3>
-        <p>{{faq.a6}}</p>
+        <h3>WanderVoxで旅全体を計画できますか?</h3>
+        <p>はい。Tripタブはフライトやホテルからレストランやアクティビティまでをまとめた日付付き旅程を提供し、予約リマインダー、リアルタイム通貨換算、保存した場所を1画面で確認できます。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q7}}</h3>
-        <p>{{faq.a7}}</p>
+        <h3>アカウントを作る必要はありますか?</h3>
+        <p>いいえ。WanderVoxはFirebase Anonymous Authで即座にゲストとして開始します。Googleサインインは任意で、アプリを再インストールしてもアイデンティティを保持できます。旅のデータは端末内に保存されます。</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q8}}</h3>
-        <p>{{faq.a8}}</p>
+        <h3>オフライン翻訳は本当に使えますか?</h3>
+        <p>Androidでは、言語を一度ダウンロードしておけば、端末上のML Kitで入力テキストの翻訳が完全オフラインで動作します。音声翻訳とカメラ翻訳には接続が必要です。</p>
       </div>
     </div>
   </div>
@@ -1496,22 +1502,22 @@ footer {
 <!-- Download CTA -->
 <section class="download-cta" id="download">
   <div class="container">
-    <div class="section-label">{{cta.label}}</div>
-    <h2 class="section-title">{{cta.title}}</h2>
-    <p class="section-desc">{{cta.desc}}</p>
+    <div class="section-label">はじめる</div>
+    <h2 class="section-title">次の旅には、もっと良い相棒を</h2>
+    <p class="section-desc">WanderVoxはAndroidで配信中、iOSも近日公開。インストール無料、無制限利用が必要なときだけPro。</p>
     <div class="download-badges">
-      <a class="badge-google" href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer" aria-label="{{cta.play_aria}}">
+      <a class="badge-google" href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer" aria-label="Google PlayでWanderVoxを入手">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .61-.92zm1.393-.508L15.98 7.28l-2.87 2.87L5.003 1.306zm0 21.388l8.107-8.844-2.87-2.87L5.003 22.694zm12.571-9.9L20.2 12l-2.625 1.206-3.076-3.206 3.076-3.094z"/></svg>
         <div>
-          <span class="badge-google-sub">{{cta.play_sub}}</span>
-          <span class="badge-google-main">{{cta.play_main}}</span>
+          <span class="badge-google-sub">ダウンロード</span>
+          <span class="badge-google-main">Google Play</span>
         </div>
       </a>
-      <div class="badge-ios-soon" aria-label="{{cta.ios_aria}}">
+      <div class="badge-ios-soon" aria-label="WanderVox iOS版近日公開">
         <span class="badge-ios-icon" aria-hidden="true">iOS</span>
         <div>
-          <span class="badge-google-sub">{{cta.ios_sub}}</span>
-          <span class="badge-google-main">{{cta.ios_main}}</span>
+          <span class="badge-google-sub">近日公開</span>
+          <span class="badge-google-main">iOS</span>
         </div>
       </div>
     </div>
@@ -1526,34 +1532,34 @@ footer {
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-name">WanderVox</div>
-        <p>{{footer.brand_desc}}</p>
+        <p>49言語・51の旅先で、瞬時の翻訳、旅程計画、文化的な知識、ローカルな発見をサポートするAIの旅の相棒。</p>
         <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 16px;">
-          <img src="https://sellwithboost.com/badge/listing-dark.svg" alt="{{footer.sellwithboost_alt}}" style="height: 40px; width: auto;" />
+          <img src="https://sellwithboost.com/badge/listing-dark.svg" alt="Sell With boostに掲載" style="height: 40px; width: auto;" />
         </a>
       </div>
       <div>
-        <div class="footer-heading">{{footer.product_h}}</div>
+        <div class="footer-heading">プロダクト</div>
         <ul class="footer-links">
-          <li><a href="/">{{footer.f_home}}</a></li>
-          <li><a href="#features">{{footer.f_features}}</a></li>
-          <li><a href="#faq">{{footer.f_faq}}</a></li>
-          <li><a href="#download">{{footer.f_download}}</a></li>
+          <li><a href="/">ホーム</a></li>
+          <li><a href="#features">機能</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#download">ダウンロード</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">{{footer.legal_h}}</div>
+        <div class="footer-heading">法的情報</div>
         <ul class="footer-links">
-          <li><a href="/privacy">{{footer.f_privacy}}</a></li>
-          <li><a href="/terms">{{footer.f_terms}}</a></li>
-          <li><a href="mailto:hello@wandervox.app">{{footer.f_contact}}</a></li>
+          <li><a href="/privacy">プライバシーポリシー</a></li>
+          <li><a href="/terms">利用規約</a></li>
+          <li><a href="mailto:hello@wandervox.app">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">{{footer.copy}} <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">{{footer.updated}}</span></div>
+      <div class="footer-copy">&copy; 2026 WanderVox. All rights reserved. Produced by <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">最終更新: 2026年5月14日</span></div>
       <div class="footer-legal">
-        <a href="/privacy">{{footer.legal_privacy}}</a>
-        <a href="/terms">{{footer.legal_terms}}</a>
+        <a href="/privacy">プライバシー</a>
+        <a href="/terms">利用規約</a>
         <a href="mailto:hello@wandervox.app">hello@wandervox.app</a>
         <span class="footer-lang">
           <a href="/" hreflang="en" lang="en">EN</a>

@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{meta.title}}</title>
+<title>WanderVox - Reise-App für Sprach- und Foto-Übersetzung</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta name="description" content="{{meta.description}}">
-<link rel="canonical" href="{{canonical_url}}">
-{{hreflang_block}}
+<meta name="description" content="WanderVox übersetzt Sprache, Speisekarten und Schilder in 49 Sprachen. Reiseplaner, Kulturtipps und lokale Empfehlungen für 51 Reiseziele.">
+<link rel="canonical" href="https://wandervox.app/de/">
+<link rel="alternate" hreflang="de" href="https://wandervox.app/de/">
+<link rel="alternate" hreflang="en" href="https://wandervox.app/">
+<link rel="alternate" hreflang="es" href="https://wandervox.app/es/">
+<link rel="alternate" hreflang="fr" href="https://wandervox.app/fr/">
+<link rel="alternate" hreflang="ja" href="https://wandervox.app/ja/">
+<link rel="alternate" hreflang="nl" href="https://wandervox.app/nl/">
+<link rel="alternate" hreflang="x-default" href="https://wandervox.app/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="WanderVox">
-<meta property="og:title" content="{{meta.og_title}}">
-<meta property="og:description" content="{{meta.og_description}}">
+<meta property="og:title" content="WanderVox - Reise-App für Sprach- und Foto-Übersetzung">
+<meta property="og:description" content="WanderVox übersetzt Sprache, Schilder und Speisekarten in 49 Sprachen. Reiseplaner, Kulturtipps und Geheimtipps für 51 Reiseziele.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{canonical_url}}">
+<meta property="og:url" content="https://wandervox.app/de/">
 <meta property="og:site_name" content="WanderVox">
-<meta property="og:locale" content="{{meta.og_locale}}">
+<meta property="og:locale" content="de_DE">
 <meta property="og:image" content="https://wandervox.app/og.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/svg+xml">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{meta.og_title}}">
-<meta name="twitter:description" content="{{meta.tw_description}}">
+<meta name="twitter:title" content="WanderVox - Reise-App für Sprach- und Foto-Übersetzung">
+<meta name="twitter:description" content="Übersetze Sprache, Speisekarten und Schilder in 49 Sprachen. Reiseplaner und KI-Kulturguide für 51 Reiseziele.">
 <meta name="twitter:image" content="https://wandervox.app/og.svg">
 <meta name="msvalidate.01" content="62E862B45C2FF7F19FE7939A67BB5C6F">
 <!-- Google tag (gtag.js) -->
@@ -1022,18 +1028,18 @@ footer {
 <!-- Navigation -->
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="{{nav.logo_aria}}">
+    <a href="/" class="nav-logo" aria-label="WanderVox Start">
       <img src="/favicon.svg" alt="WanderVox logo" width="28" height="28" class="nav-logo-img">
       WanderVox
     </a>
-    <button class="mobile-toggle" aria-label="{{nav.toggle_aria}}" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <button class="mobile-toggle" aria-label="Navigationsmenü öffnen" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     <ul class="nav-links">
-      <li><a href="/">{{nav.home}}</a></li>
-      <li><a href="#features">{{nav.features}}</a></li>
-      <li><a href="#pricing">{{nav.pricing}}</a></li>
-      <li><a href="/privacy">{{nav.privacy}}</a></li>
-      <li><a href="/terms">{{nav.terms}}</a></li>
-      <li><a href="#download" class="nav-cta">{{nav.download}}</a></li>
+      <li><a href="/">Start</a></li>
+      <li><a href="#features">Funktionen</a></li>
+      <li><a href="#pricing">Preise</a></li>
+      <li><a href="/privacy">Datenschutz</a></li>
+      <li><a href="/terms">AGB</a></li>
+      <li><a href="#download" class="nav-cta">Download</a></li>
     </ul>
   </div>
 </nav>
@@ -1045,34 +1051,34 @@ footer {
   <div class="container">
     <div class="hero-badge">
       <span class="hero-badge-dot" aria-hidden="true"></span>
-      {{hero.badge}}
+      Verfügbar im Google Play - iOS folgt bald
     </div>
-    <h1>{{hero.h1_line1}}<br>{{hero.h1_line2}}</h1>
-    <p class="hero-sub">{{hero.sub}}</p>
+    <h1>Sprich jede Sprache.<br>Entdecke, was Touristen verpassen.</h1>
+    <p class="hero-sub">Übersetze Speisekarten, plane deine Reise nach Datum und finde die Orte, die kein Reiseführer zeigt — in 49 Sprachen und 51 Reisezielen. Kostenlos starten.</p>
     <div class="hero-ctas">
       <a href="#download" class="btn-primary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        {{hero.cta_play}}
+        Bei Google Play laden
       </a>
       <a href="#features" class="btn-secondary">
-        {{hero.cta_how}}
+        So funktioniert's
       </a>
     </div>
-    <a class="ios-notify" href="mailto:hello@wandervox.app?subject={{hero.ios_notify_subject}}&body={{hero.ios_notify_body}}">
-      {{hero.ios_notify}}
+    <a class="ios-notify" href="mailto:hello@wandervox.app?subject=Benachrichtigt%20mich%2C%20wenn%20iOS%20startet&body=Setz%20mich%20auf%20die%20iOS-Warteliste.">
+      iPhone? Beim Launch benachrichtigen →
     </a>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-num">{{hero.stat_langs_num}}</div>
-        <div class="hero-stat-label">{{hero.stat_langs_label}}</div>
+        <div class="hero-stat-num">49</div>
+        <div class="hero-stat-label">Sprachen</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">{{hero.stat_dest_num}}</div>
-        <div class="hero-stat-label">{{hero.stat_dest_label}}</div>
+        <div class="hero-stat-num">51</div>
+        <div class="hero-stat-label">Reiseziele</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">{{hero.stat_free_num}}</div>
-        <div class="hero-stat-label">{{hero.stat_free_label}}</div>
+        <div class="hero-stat-num">Gratis</div>
+        <div class="hero-stat-label">zum Start</div>
       </div>
     </div>
   </div>
@@ -1082,9 +1088,9 @@ footer {
 <section class="showcase">
   <div class="container">
     <div class="showcase-frame">
-      <video controls preload="metadata" playsinline aria-label="{{video.aria}}">
+      <video controls preload="metadata" playsinline aria-label="WanderVox Launch-Video">
         <source src="/videos/wandervox_launch_video_1080p.mp4" type="video/mp4">
-        {{video.fallback}}
+        Dein Browser unterstützt keine eingebetteten Videos.
       </video>
     </div>
   </div>
@@ -1094,142 +1100,142 @@ footer {
 <section id="features">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{features.label}}</div>
-      <h2 class="section-title">{{features.title}}</h2>
-      <p class="section-desc">{{features.desc}}</p>
+      <div class="section-label">Funktionen</div>
+      <h2 class="section-title">Alles, was du im Ausland brauchst — in deiner Tasche</h2>
+      <p class="section-desc">WanderVox ist eine Reise-App, die Echtzeit-Übersetzung in 49 Sprachen, Texterkennung per Kamera, Kulturguides für 51 Reiseziele, KI-kuratierte Empfehlungen und einen datierten Reiseplaner kombiniert.</p>
     </div>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon feature-icon--blue" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
         </div>
-        <h3>{{features.voice_h3}}</h3>
-        <p class="feature-answer">{{features.voice_summary}}</p>
-        <p>{{features.voice_body}}</p>
+        <h3>Wie funktioniert die Sprachübersetzung?</h3>
+        <p class="feature-answer">Sprachübersetzung ist sofortige Sprache-zu-Sprache-Übersetzung — tippen, in deiner Sprache sprechen und die Übersetzung in der anderen Sprache hören.</p>
+        <p>Tippe zum Aufnehmen und erhalte sofort eine Sprache-zu-Sprache-Übersetzung. Führe echte Gespräche mit Einheimischen, handle auf Märkten oder frag nach dem Weg — ganz ohne Sprachbarriere.</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.voice_tag1}}</span>
-          <span class="feature-tag">{{features.voice_tag2}}</span>
-          <span class="feature-tag">{{features.voice_tag3}}</span>
+          <span class="feature-tag">49 Sprachen</span>
+          <span class="feature-tag">Zwei Richtungen</span>
+          <span class="feature-tag">Natürliche Stimme</span>
         </div>
       </div>
       <div class="feature-card feature-card--green">
         <div class="feature-icon feature-icon--green" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
         </div>
-        <h3>{{features.camera_h3}}</h3>
-        <p class="feature-answer">{{features.camera_summary}}</p>
-        <p>{{features.camera_body}}</p>
+        <h3>Was kann die smarte Kamera übersetzen?</h3>
+        <p class="feature-answer">Die smarte Kamera erkennt und übersetzt Speisekarten, Schilder und Dokumente per KI aus einem einzigen Foto.</p>
+        <p>Richte die Kamera auf ein Schild, eine Speisekarte oder ein Dokument. WanderVox erkennt die Sprache sofort, übersetzt den Text und ergänzt hilfreichen Kontext, damit nichts verloren geht.</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.camera_tag1}}</span>
-          <span class="feature-tag">{{features.camera_tag2}}</span>
-          <span class="feature-tag">{{features.camera_tag3}}</span>
+          <span class="feature-tag">Kamera &amp; Galerie</span>
+          <span class="feature-tag">Auto-Erkennung</span>
+          <span class="feature-tag">Kontextnotizen</span>
         </div>
       </div>
       <div class="feature-card feature-card--green">
         <div class="feature-icon feature-icon--green" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
         </div>
-        <h3>{{features.culture_h3}}</h3>
-        <p class="feature-answer">{{features.culture_summary}}</p>
-        <p>{{features.culture_body}}</p>
+        <h3>Welche Kulturtipps bekommst du?</h3>
+        <p class="feature-answer">Der Kulturguide liefert lokale Phrasen, Do's und Don'ts, Gesten und Essensguides für 51 Reiseziele — offline verfügbar, überall abrufbar.</p>
+        <p>Lerne wichtige lokale Phrasen, Etikette-Tipps und kulturelle Einblicke, bevor du ankommst. Vermeide peinliche Patzer und zeig Respekt vor lokalen Gepflogenheiten — offline gespeichert für schnellen Zugriff.</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.culture_tag1}}</span>
-          <span class="feature-tag">{{features.culture_tag2}}</span>
-          <span class="feature-tag">{{features.culture_tag3}}</span>
+          <span class="feature-tag">Lokale Phrasen</span>
+          <span class="feature-tag">Etikette</span>
+          <span class="feature-tag">Offline</span>
         </div>
       </div>
       <div class="feature-card">
         <div class="feature-icon feature-icon--blue" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
         </div>
-        <h3>{{features.explore_h3}}</h3>
-        <p class="feature-answer">{{features.explore_summary}}</p>
-        <p>{{features.explore_body}}</p>
+        <h3>Wie findet Explore Geheimtipps?</h3>
+        <p class="feature-answer">Explore nutzt KI, um hyperlokale Empfehlungen ans Licht zu bringen — Street-Food-Stände, geheime Aussichtspunkte und Nachtleben im Viertel, das die meisten Touristen nie entdecken.</p>
+        <p>Entdecke, was Touristen verpassen. KI-kuratierte Empfehlungen zeigen das beste Street Food, geheime Orte, Nachtleben, Kunst, Naturplätze und Rückzugsorte — passend zu deinem Standort.</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.explore_tag1}}</span>
-          <span class="feature-tag">{{features.explore_tag2}}</span>
-          <span class="feature-tag">{{features.explore_tag3}}</span>
-          <span class="feature-tag">{{features.explore_tag4}}</span>
+          <span class="feature-tag">Street Food</span>
+          <span class="feature-tag">Geheimtipps</span>
+          <span class="feature-tag">Nachtleben &amp; Kunst</span>
+          <span class="feature-tag">Natur</span>
         </div>
       </div>
       <div class="feature-card feature-card--green">
         <div class="feature-icon feature-icon--green" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="14" x2="10" y2="14"></line><line x1="14" y1="14" x2="16" y2="14"></line><line x1="8" y1="18" x2="10" y2="18"></line></svg>
         </div>
-        <h3>{{features.trip_h3}}</h3>
-        <p class="feature-answer">{{features.trip_summary}}</p>
-        <p>{{features.trip_body}}</p>
+        <h3>Was macht der Reiseplaner?</h3>
+        <p class="feature-answer">Der Reiseplaner verwandelt deine Buchungen, Orte und Erinnerungen in einen datierten Reiseplan.</p>
+        <p>Füge Flüge, Hotels, Restaurants und Aktivitäten hinzu. WanderVox gruppiert sie nach Datum, rechnet Währungen live um und erinnert dich vor jedem Pickup oder Check-in. Gespeicherte Orte stehen neben deinen Buchungen auf demselben Bildschirm.</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.trip_tag1}}</span>
-          <span class="feature-tag">{{features.trip_tag2}}</span>
-          <span class="feature-tag">{{features.trip_tag3}}</span>
-          <span class="feature-tag">{{features.trip_tag4}}</span>
+          <span class="feature-tag">Plan mit Datum</span>
+          <span class="feature-tag">Währungsrechner</span>
+          <span class="feature-tag">Erinnerungen</span>
+          <span class="feature-tag">Gespeicherte Orte</span>
         </div>
       </div>
       <div class="feature-card">
         <div class="feature-icon feature-icon--blue" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </div>
-        <h3>{{features.offline_h3}}</h3>
-        <p class="feature-answer">{{features.offline_summary}}</p>
-        <p>{{features.offline_body}}</p>
+        <h3>Funktioniert WanderVox offline?</h3>
+        <p class="feature-answer">Android-Nutzer können getippten Text vollständig offline übersetzen — dank ML Kit direkt auf dem Gerät.</p>
+        <p>Lade eine Sprache einmal herunter und übersetze Text ohne Empfang — perfekt für Flüge, U-Bahnen oder Funklöcher. Sprach- und Kameraübersetzung brauchen weiterhin eine Verbindung.</p>
         <div class="feature-tags">
-          <span class="feature-tag">{{features.offline_tag1}}</span>
-          <span class="feature-tag">{{features.offline_tag2}}</span>
-          <span class="feature-tag">{{features.offline_tag3}}</span>
-          <span class="feature-tag">{{features.offline_tag4}}</span>
+          <span class="feature-tag">Android</span>
+          <span class="feature-tag">ML Kit auf dem Gerät</span>
+          <span class="feature-tag">Kein Empfang nötig</span>
+          <span class="feature-tag">Getippter Text</span>
         </div>
       </div>
     </div>
     <div class="mini-features-header">
-      <h3>{{mini.title}}</h3>
-      <p>{{mini.desc}}</p>
+      <h3>Noch mehr, das einfach funktioniert</h3>
+      <p>Kleine Details, die zeigen, dass die App von jemandem gebaut wurde, der wirklich reist.</p>
     </div>
     <div class="mini-features">
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">💬</div>
-        <h4>{{mini.conv_h}}</h4>
-        <p>{{mini.conv_p}}</p>
+        <h4>Gesprächsmodus</h4>
+        <p>Natürliche Hin-und-Her-Übersetzung, die automatisch erkennt, wer welche Sprache spricht.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🔊</div>
-        <h4>{{mini.audio_h}}</h4>
-        <p>{{mini.audio_p}}</p>
+        <h4>Phrase abspielen</h4>
+        <p>Tippe auf eine Phrase, um sie laut in der Landessprache zu hören.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🚕</div>
-        <h4>{{mini.taxi_h}}</h4>
-        <p>{{mini.taxi_p}}</p>
+        <h4>Taxi-Karte</h4>
+        <p>Zeig jedem Fahrer dein Ziel in seiner Sprache — Adresse und lokale Schrift.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🆘</div>
-        <h4>{{mini.sos_h}}</h4>
-        <p>{{mini.sos_p}}</p>
+        <h4>Notfall-Infos</h4>
+        <p>Lokale Notrufnummern und Sicherheitsphrasen für unterstützte Reiseziele, mit globalen Fallbacks. Immer kostenlos.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🥗</div>
-        <h4>{{mini.diet_h}}</h4>
-        <p>{{mini.diet_p}}</p>
+        <h4>Ernährungsvorlieben</h4>
+        <p>Allergien und Einschränkungen speichern; die Kamera markiert problematische Menüpunkte.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">⏰</div>
-        <h4>{{mini.remind_h}}</h4>
-        <p>{{mini.remind_p}}</p>
+        <h4>Buchungs-Erinnerungen</h4>
+        <p>Lokale Benachrichtigungen vor Check-ins, Pickups und Aktivitäten — ganz ohne Push-Server.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">💱</div>
-        <h4>{{mini.curr_h}}</h4>
-        <p>{{mini.curr_p}}</p>
+        <h4>Währungsrechner</h4>
+        <p>Live-Kurse auf deinem Reise-Screen für dein aktuelles Ziel.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">🕒</div>
-        <h4>{{mini.clock_h}}</h4>
-        <p>{{mini.clock_p}}</p>
+        <h4>Doppel-Uhr</h4>
+        <p>Heimat- und Zielzeit nebeneinander, jederzeit im Header sichtbar.</p>
       </div>
       <div class="mini-feature">
         <div class="mini-feature-icon" aria-hidden="true">👤</div>
-        <h4>{{mini.nosignup_h}}</h4>
-        <p>{{mini.nosignup_p}}</p>
+        <h4>Keine Anmeldung nötig</h4>
+        <p>Installieren und als Gast loslegen. Google-Anmeldung optional — behält deine Identität nach Neuinstallation.</p>
       </div>
     </div>
   </div>
@@ -1239,75 +1245,75 @@ footer {
 <section class="comparison">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{comparison.label}}</div>
-      <h2 class="section-title">{{comparison.title}}</h2>
-      <p class="section-desc">{{comparison.desc}}</p>
+      <div class="section-label">Warum WanderVox</div>
+      <h2 class="section-title">Mehr als ein Übersetzer</h2>
+      <p class="section-desc">WanderVox ist ein kompletter Reisebegleiter, der mehrere Apps ersetzt. So schlägt es sich gegen separate Tools.</p>
     </div>
     <div class="comparison-table-wrap">
       <!-- Comparison verified against Google Translate for Android on 2026-04-19 -->
       <table class="comparison-table">
         <thead>
           <tr>
-            <th>{{comparison.th_feature}}</th>
-            <th>{{comparison.th_wv}}</th>
-            <th>{{comparison.th_gt}}</th>
+            <th>Funktion</th>
+            <th>WanderVox</th>
+            <th>Google Translate</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{{comparison.voice_feat}}</td>
-            <td>{{comparison.voice_wv}}</td>
-            <td>{{comparison.voice_gt}}</td>
+            <td>Sprachübersetzung</td>
+            <td>Tippen-und-Sprechen, Antwort wird automatisch vorgelesen</td>
+            <td>Manueller Mikrofon-Button, keine Auto-Wiedergabe</td>
           </tr>
           <tr>
-            <td>{{comparison.menu_feat}}</td>
-            <td>{{comparison.menu_wv}}</td>
-            <td>{{comparison.menu_gt}}</td>
+            <td>Speisekarten-Übersetzung</td>
+            <td>Erkennt Allergene, Diät-Tags, Gerichtsbeschreibungen</td>
+            <td>Nur reine Textübersetzung</td>
           </tr>
           <tr>
-            <td>{{comparison.sign_feat}}</td>
-            <td>{{comparison.sign_wv}}</td>
-            <td>{{comparison.sign_gt}}</td>
+            <td>Schild-Übersetzung</td>
+            <td>Übersetzt + erklärt kulturellen Kontext</td>
+            <td>Übersetzt nur den Text</td>
           </tr>
           <tr>
-            <td>{{comparison.rec_feat}}</td>
-            <td>{{comparison.rec_wv}}</td>
-            <td>{{comparison.rec_gt}}</td>
+            <td>Lokale Empfehlungen</td>
+            <td>KI-kuratiert: Street Food, Geheimtipps, Nachtleben</td>
+            <td>Nicht verfügbar</td>
           </tr>
           <tr>
-            <td>{{comparison.sos_feat}}</td>
-            <td>{{comparison.sos_wv}}</td>
-            <td>{{comparison.sos_gt}}</td>
+            <td>Notfall-Infos</td>
+            <td>Lokale Notrufnummern, Sicherheitsphrasen, immer kostenlos</td>
+            <td>Nicht verfügbar</td>
           </tr>
           <tr>
-            <td>{{comparison.phrases_feat}}</td>
-            <td>{{comparison.phrases_wv}}</td>
-            <td>{{comparison.phrases_gt}}</td>
+            <td>Reise-Phrasen</td>
+            <td>Pro Land kuratiert mit Audio-Aussprache</td>
+            <td>Generischer Sprachführer, wenig Audio</td>
           </tr>
           <tr>
-            <td>{{comparison.diet_feat}}</td>
-            <td>{{comparison.diet_wv}}</td>
-            <td>{{comparison.diet_gt}}</td>
+            <td>Allergen-Erkennung</td>
+            <td>Markiert Allergie-/Diät-Konflikte in Menüs</td>
+            <td>Nicht verfügbar</td>
           </tr>
           <tr>
-            <td>{{comparison.taxi_feat}}</td>
-            <td>{{comparison.taxi_wv}}</td>
-            <td>{{comparison.taxi_gt}}</td>
+            <td>Taxi-Karte</td>
+            <td>Ziel in lokaler Sprache und Schrift</td>
+            <td>Nicht verfügbar</td>
           </tr>
           <tr>
-            <td>{{comparison.trip_feat}}</td>
-            <td>{{comparison.trip_wv}}</td>
-            <td>{{comparison.trip_gt}}</td>
+            <td>Reiseplan &amp; Buchungen</td>
+            <td>Datierter Planer mit Erinnerungen, Währungen und Orten</td>
+            <td>Nicht verfügbar</td>
           </tr>
           <tr>
-            <td>{{comparison.culture_feat}}</td>
-            <td>{{comparison.culture_wv}}</td>
-            <td>{{comparison.culture_gt}}</td>
+            <td>Kulturguide</td>
+            <td>Phrasen, Etikette und Essen für 51 Reiseziele, offline</td>
+            <td>Generischer Sprachführer, kein Kulturkontext</td>
           </tr>
           <tr>
-            <td>{{comparison.built_feat}}</td>
-            <td>{{comparison.built_wv}}</td>
-            <td>{{comparison.built_gt}}</td>
+            <td>Für Reisende gebaut</td>
+            <td>Auf echte Reisesituationen ausgelegt</td>
+            <td>Allgemeines Übersetzungstool</td>
           </tr>
         </tbody>
       </table>
@@ -1319,25 +1325,25 @@ footer {
 <section id="how-it-works">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{how.label}}</div>
-      <h2 class="section-title">{{how.title}}</h2>
-      <p class="section-desc">{{how.desc}}</p>
+      <div class="section-label">So funktioniert's</div>
+      <h2 class="section-title">Kommuniziere in Sekunden</h2>
+      <p class="section-desc">WanderVox ist für Reisende gemacht, die schnelle, verlässliche Übersetzung und lokales Wissen ohne Einrichtungsaufwand brauchen.</p>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-number">1</div>
-        <h3>{{how.s1_h}}</h3>
-        <p>{{how.s1_p}}</p>
+        <h3>Wähle dein Ziel</h3>
+        <p>Wähle, wohin du reist. WanderVox lädt Kulturphrasen, Tipps und lokale Empfehlungen für die Region.</p>
       </div>
       <div class="step">
         <div class="step-number">2</div>
-        <h3>{{how.s2_h}}</h3>
-        <p>{{how.s2_p}}</p>
+        <h3>Sprich oder fotografiere</h3>
+        <p>Tippe auf das Mikro, um Sprache in Echtzeit zu übersetzen, oder richte die Kamera auf Text. Ergebnisse in unter zwei Sekunden.</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
-        <h3>{{how.s3_h}}</h3>
-        <p>{{how.s3_p}}</p>
+        <h3>Erlebe wie ein Local</h3>
+        <p>Stöbere durch KI-kuratiertes Street Food, Geheimtipps, Nachtleben und Kulturerlebnisse, zugeschnitten auf deinen Standort.</p>
       </div>
     </div>
   </div>
@@ -1347,41 +1353,41 @@ footer {
 <section class="proof">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{proof.label}}</div>
-      <h2 class="section-title">{{proof.title}}</h2>
-      <p class="section-desc">{{proof.desc}}</p>
+      <div class="section-label">Reisegeschichten</div>
+      <h2 class="section-title">Von Reisenden weltweit empfohlen</h2>
+      <p class="section-desc">Echtes Feedback von Reisenden, die WanderVox genutzt haben, um Sprachbarrieren zu überwinden und Geheimtipps zu entdecken.</p>
     </div>
     <div class="proof-grid">
       <div class="proof-card">
-        <div class="proof-stars" aria-label="{{proof.stars_aria}}">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="proof-text">{{proof.q1}}</p>
+        <div class="proof-stars" aria-label="5 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-text">"Ich habe das beste Essen meiner Reise bestellt, weil WanderVox eine handgeschriebene Speisekarte in einer winzigen Gasse in Tokio übersetzt hat. Keine andere App hätte das geschafft."</p>
         <div class="proof-author">
           <div class="proof-avatar" aria-hidden="true">MR</div>
           <div>
-            <div class="proof-name">{{proof.name1}}</div>
-            <div class="proof-location">{{proof.loc1}}</div>
+            <div class="proof-name">Marcus R.</div>
+            <div class="proof-location">Tokio, Japan</div>
           </div>
         </div>
       </div>
       <div class="proof-card">
-        <div class="proof-stars" aria-label="{{proof.stars_aria}}">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="proof-text">{{proof.q2}}</p>
+        <div class="proof-stars" aria-label="5 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-text">"Die Kulturtipps haben mich in Marokko vor mehreren peinlichen Situationen bewahrt. Lokale Gepflogenheiten vorher zu kennen, hat einen riesigen Unterschied gemacht."</p>
         <div class="proof-author">
           <div class="proof-avatar" aria-hidden="true">SL</div>
           <div>
-            <div class="proof-name">{{proof.name2}}</div>
-            <div class="proof-location">{{proof.loc2}}</div>
+            <div class="proof-name">Sarah L.</div>
+            <div class="proof-location">Marrakesch, Marokko</div>
           </div>
         </div>
       </div>
       <div class="proof-card">
-        <div class="proof-stars" aria-label="{{proof.stars_aria}}">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="proof-text">{{proof.q3}}</p>
+        <div class="proof-stars" aria-label="5 von 5 Sternen">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof-text">"Explore hat mir eine Rooftop-Bar und eine Street-Art-Tour gezeigt, die in keinem Reiseführer standen. Diese App weiß Dinge, die Google nicht weiß."</p>
         <div class="proof-author">
           <div class="proof-avatar" aria-hidden="true">JK</div>
           <div>
-            <div class="proof-name">{{proof.name3}}</div>
-            <div class="proof-location">{{proof.loc3}}</div>
+            <div class="proof-name">James K.</div>
+            <div class="proof-location">Lissabon, Portugal</div>
           </div>
         </div>
       </div>
@@ -1393,58 +1399,58 @@ footer {
 <section id="pricing">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{pricing.label}}</div>
-      <h2 class="section-title">{{pricing.title}}</h2>
-      <p class="section-desc">{{pricing.desc}}</p>
+      <div class="section-label">Preise</div>
+      <h2 class="section-title">Kostenlos starten, Pro wenn du reist</h2>
+      <p class="section-desc">Kein Konto nötig. Sofort upgraden, wenn du mehr brauchst.</p>
     </div>
     <div class="pricing-grid">
       <div class="pricing-card">
-        <div class="pricing-name">{{pricing.free_name}}</div>
-        <div class="pricing-price">{{pricing.free_price}}</div>
-        <div class="pricing-period">{{pricing.free_period}}</div>
+        <div class="pricing-name">Gratis</div>
+        <div class="pricing-price">$0</div>
+        <div class="pricing-period">für immer</div>
         <ul class="pricing-features">
-          <li>{{pricing.free_f1}}</li>
-          <li>{{pricing.free_f2}}</li>
-          <li>{{pricing.free_f3}}</li>
-          <li>{{pricing.free_f4}}</li>
-          <li>{{pricing.free_f5}}</li>
+          <li>5 Sprachübersetzungen / Tag</li>
+          <li>3 Kameraübersetzungen / Tag</li>
+          <li>Wichtige Kulturphrasen</li>
+          <li>3 Explore-Ergebnisse / Kategorie</li>
+          <li>Notfall-Infos (immer kostenlos)</li>
         </ul>
       </div>
       <div class="pricing-card pricing-featured">
-        <div class="pricing-badge">{{pricing.popular}}</div>
-        <div class="pricing-name">{{pricing.trip_name}}</div>
-        <div class="pricing-price">{{pricing.trip_price}}</div>
-        <div class="pricing-period">{{pricing.trip_period}}</div>
+        <div class="pricing-badge">Beliebt</div>
+        <div class="pricing-name">Trip Pass</div>
+        <div class="pricing-price">$2.99</div>
+        <div class="pricing-period">/ Woche</div>
         <ul class="pricing-features">
-          <li>{{pricing.trip_f1}}</li>
-          <li>{{pricing.trip_f2}}</li>
-          <li>{{pricing.trip_f3}}</li>
-          <li>{{pricing.trip_f4}}</li>
-          <li>{{pricing.trip_f5}}</li>
-          <li>{{pricing.trip_f6}}</li>
+          <li>Unbegrenzte Sprachübersetzungen</li>
+          <li>Unbegrenzte Smart Camera</li>
+          <li>Phrasen-Audio</li>
+          <li>Alle Kulturtipps</li>
+          <li>Unbegrenztes Explore</li>
+          <li>Taxi-Karten</li>
         </ul>
       </div>
       <div class="pricing-card">
-        <div class="pricing-name">{{pricing.monthly_name}}</div>
-        <div class="pricing-price">{{pricing.monthly_price}}</div>
-        <div class="pricing-period">{{pricing.monthly_period}}</div>
+        <div class="pricing-name">Monatlich</div>
+        <div class="pricing-price">$6.99</div>
+        <div class="pricing-period">/ Monat</div>
         <ul class="pricing-features">
-          <li>{{pricing.monthly_f1}}</li>
-          <li>{{pricing.monthly_f2}}</li>
+          <li>Alles aus Trip Pass</li>
+          <li>Ideal für Vielreisende</li>
         </ul>
       </div>
       <div class="pricing-card">
-        <div class="pricing-badge">{{pricing.best_value}}</div>
-        <div class="pricing-name">{{pricing.annual_name}}</div>
-        <div class="pricing-price">{{pricing.annual_price}}</div>
-        <div class="pricing-period">{{pricing.annual_period}}</div>
+        <div class="pricing-badge">Bestes Angebot</div>
+        <div class="pricing-name">Jährlich</div>
+        <div class="pricing-price">$59.99</div>
+        <div class="pricing-period">/ Jahr</div>
         <ul class="pricing-features">
-          <li>{{pricing.annual_f1}}</li>
-          <li>{{pricing.annual_f2}}</li>
+          <li>Alles aus Trip Pass</li>
+          <li>Spare 28% gegenüber monatlich</li>
         </ul>
       </div>
     </div>
-    <p class="pricing-footnote">{{pricing.footnote}}</p>
+    <p class="pricing-footnote">Preise in USD. Google Play rechnet beim Kauf in deiner Landeswährung ab.</p>
   </div>
 </section>
 
@@ -1452,42 +1458,42 @@ footer {
 <section id="faq">
   <div class="container">
     <div class="section-header-center">
-      <div class="section-label">{{faq.label}}</div>
-      <h2 class="section-title">{{faq.title}}</h2>
-      <p class="section-desc">{{faq.desc}}</p>
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Häufig gestellte Fragen</h2>
+      <p class="section-desc">Schnelle Antworten zu Funktionen, Verfügbarkeit und Preisen von WanderVox.</p>
     </div>
     <div class="faq-grid">
       <div class="faq-item">
-        <h3>{{faq.q1}}</h3>
-        <p>{{faq.a1}}</p>
+        <h3>Wie viele Sprachen und Reiseziele unterstützt WanderVox?</h3>
+        <p>WanderVox unterstützt Sprache-zu-Sprache-Übersetzung in 49 Sprachen und kuratierte Kulturinhalte für 51 Reiseziele in Europa, Asien, dem Nahen Osten, Afrika und Amerika.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q2}}</h3>
-        <p>{{faq.a2}}</p>
+        <h3>Ist WanderVox kostenlos?</h3>
+        <p>Ja! WanderVox ist kostenlos mit 5 Sprach- und 3 Kameraübersetzungen pro Tag. Mehr nötig? Hol dir einen Trip Pass für $2.99/Woche, oder den Monats- ($6.99/Monat) bzw. Jahresplan ($59.99/Jahr) für unbegrenzte Nutzung.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q3}}</h3>
-        <p>{{faq.a3}}</p>
+        <h3>Kann WanderVox Schilder und Speisekarten von Fotos übersetzen?</h3>
+        <p>Ja. Richte deine Kamera auf ein Schild, eine Speisekarte, ein Dokument oder gedruckten Text — WanderVox erkennt die Sprache sofort und übersetzt mit Kontextnotizen.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q4}}</h3>
-        <p>{{faq.a4}}</p>
+        <h3>Auf welchen Plattformen ist WanderVox verfügbar?</h3>
+        <p>WanderVox ist verfügbar auf Android über <a href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer">Google Play</a>, iOS folgt bald.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q5}}</h3>
-        <p>{{faq.a5}}</p>
+        <h3>Wie funktioniert die Explore-Funktion?</h3>
+        <p>Explore nutzt KI, um personalisierte lokale Empfehlungen basierend auf Standort und Interessen zu erstellen. Es zeigt Street Food, Geheimtipps, Nachtleben, Kunst, Naturplätze und Entspannungsoptionen, die die meisten Touristen nie finden.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q6}}</h3>
-        <p>{{faq.a6}}</p>
+        <h3>Kann ich meine ganze Reise in WanderVox planen?</h3>
+        <p>Ja. Der Trip-Tab gibt dir einen datierten Plan für Flüge, Hotels, Restaurants und Aktivitäten, mit Buchungs-Erinnerungen, Live-Währungsumrechnung und gespeicherten Orten auf einem Bildschirm.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q7}}</h3>
-        <p>{{faq.a7}}</p>
+        <h3>Brauche ich ein Konto?</h3>
+        <p>Nein. WanderVox startet sofort als Gast über Firebase Anonymous Auth. Google-Anmeldung ist optional — sie behält deine Identität bei Neuinstallation. Reisedaten bleiben auf deinem Gerät.</p>
       </div>
       <div class="faq-item">
-        <h3>{{faq.q8}}</h3>
-        <p>{{faq.a8}}</p>
+        <h3>Funktioniert Offline-Übersetzung wirklich?</h3>
+        <p>Auf Android funktioniert die Übersetzung getippter Texte vollständig offline mit ML Kit auf dem Gerät, sobald eine Sprache heruntergeladen ist. Sprach- und Kameraübersetzung brauchen weiterhin eine Verbindung.</p>
       </div>
     </div>
   </div>
@@ -1496,22 +1502,22 @@ footer {
 <!-- Download CTA -->
 <section class="download-cta" id="download">
   <div class="container">
-    <div class="section-label">{{cta.label}}</div>
-    <h2 class="section-title">{{cta.title}}</h2>
-    <p class="section-desc">{{cta.desc}}</p>
+    <div class="section-label">Loslegen</div>
+    <h2 class="section-title">Deine nächste Reise verdient einen besseren Begleiter</h2>
+    <p class="section-desc">WanderVox ist auf Android verfügbar, iOS folgt bald. Kostenlose Installation, mit optionaler Pro-Stufe für unbegrenzte Nutzung.</p>
     <div class="download-badges">
-      <a class="badge-google" href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer" aria-label="{{cta.play_aria}}">
+      <a class="badge-google" href="https://play.google.com/store/apps/details?id=com.wandervox.app" target="_blank" rel="noopener noreferrer" aria-label="WanderVox bei Google Play laden">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .61-.92zm1.393-.508L15.98 7.28l-2.87 2.87L5.003 1.306zm0 21.388l8.107-8.844-2.87-2.87L5.003 22.694zm12.571-9.9L20.2 12l-2.625 1.206-3.076-3.206 3.076-3.094z"/></svg>
         <div>
-          <span class="badge-google-sub">{{cta.play_sub}}</span>
-          <span class="badge-google-main">{{cta.play_main}}</span>
+          <span class="badge-google-sub">JETZT BEI</span>
+          <span class="badge-google-main">Google Play</span>
         </div>
       </a>
-      <div class="badge-ios-soon" aria-label="{{cta.ios_aria}}">
+      <div class="badge-ios-soon" aria-label="WanderVox für iOS bald verfügbar">
         <span class="badge-ios-icon" aria-hidden="true">iOS</span>
         <div>
-          <span class="badge-google-sub">{{cta.ios_sub}}</span>
-          <span class="badge-google-main">{{cta.ios_main}}</span>
+          <span class="badge-google-sub">DEMNÄCHST AUF</span>
+          <span class="badge-google-main">iOS</span>
         </div>
       </div>
     </div>
@@ -1526,34 +1532,34 @@ footer {
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-name">WanderVox</div>
-        <p>{{footer.brand_desc}}</p>
+        <p>Dein KI-Reisebegleiter für sofortige Übersetzung, Reiseplanung, Kulturwissen und lokale Entdeckungen in 49 Sprachen und 51 Reisezielen.</p>
         <a href="https://sellwithboost.com" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 16px;">
-          <img src="https://sellwithboost.com/badge/listing-dark.svg" alt="{{footer.sellwithboost_alt}}" style="height: 40px; width: auto;" />
+          <img src="https://sellwithboost.com/badge/listing-dark.svg" alt="Gelistet auf Sell With boost" style="height: 40px; width: auto;" />
         </a>
       </div>
       <div>
-        <div class="footer-heading">{{footer.product_h}}</div>
+        <div class="footer-heading">Produkt</div>
         <ul class="footer-links">
-          <li><a href="/">{{footer.f_home}}</a></li>
-          <li><a href="#features">{{footer.f_features}}</a></li>
-          <li><a href="#faq">{{footer.f_faq}}</a></li>
-          <li><a href="#download">{{footer.f_download}}</a></li>
+          <li><a href="/">Start</a></li>
+          <li><a href="#features">Funktionen</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#download">Download</a></li>
         </ul>
       </div>
       <div>
-        <div class="footer-heading">{{footer.legal_h}}</div>
+        <div class="footer-heading">Rechtliches</div>
         <ul class="footer-links">
-          <li><a href="/privacy">{{footer.f_privacy}}</a></li>
-          <li><a href="/terms">{{footer.f_terms}}</a></li>
-          <li><a href="mailto:hello@wandervox.app">{{footer.f_contact}}</a></li>
+          <li><a href="/privacy">Datenschutzerklärung</a></li>
+          <li><a href="/terms">Nutzungsbedingungen</a></li>
+          <li><a href="mailto:hello@wandervox.app">Kontakt</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">{{footer.copy}} <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">{{footer.updated}}</span></div>
+      <div class="footer-copy">&copy; 2026 WanderVox. Alle Rechte vorbehalten. Ein Produkt von <a href="https://lamsitsolutions.be" style="color: var(--text-muted); text-decoration: underline;">LamsIT Solutions</a> &nbsp;<span class="footer-updated">Zuletzt aktualisiert: 14. Mai 2026</span></div>
       <div class="footer-legal">
-        <a href="/privacy">{{footer.legal_privacy}}</a>
-        <a href="/terms">{{footer.legal_terms}}</a>
+        <a href="/privacy">Datenschutz</a>
+        <a href="/terms">AGB</a>
         <a href="mailto:hello@wandervox.app">hello@wandervox.app</a>
         <span class="footer-lang">
           <a href="/" hreflang="en" lang="en">EN</a>
