@@ -937,6 +937,29 @@ footer {
 
 .footer-updated { font-size: 0.85rem; color: var(--text-muted); }
 
+/* ── SHOWCASE VIDEO ── */
+.showcase {
+  padding: 20px 0 60px;
+}
+.showcase-frame {
+  position: relative;
+  width: fit-content;
+  max-width: 90vw;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid rgba(88,166,255,0.18);
+  box-shadow: 0 30px 80px -20px rgba(88,166,255,0.18), 0 10px 40px -10px rgba(0,0,0,0.6);
+}
+.showcase-frame video {
+  display: block;
+  max-height: 75vh;
+  max-width: 90vw;
+  height: auto;
+  width: auto;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .features-grid { grid-template-columns: 1fr; }
@@ -946,6 +969,7 @@ footer {
   .faq-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero-stats { gap: 32px; }
+  .showcase { padding: 16px 0 40px; }
 }
 
 @media (max-width: 640px) {
@@ -1018,6 +1042,18 @@ footer {
         <div class="hero-stat-num">Free</div>
         <div class="hero-stat-label">to Start</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Showcase video -->
+<section class="showcase">
+  <div class="container">
+    <div class="showcase-frame">
+      <video controls preload="metadata" playsinline aria-label="WanderVox launch video">
+        <source src="/videos/wandervox_launch_video_1080p.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
     </div>
   </div>
 </section>
