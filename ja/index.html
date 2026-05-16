@@ -81,7 +81,8 @@
         "@type": "ContactPoint",
         "email": "hello@wandervox.app",
         "contactType": "customer support",
-        "availableLanguage": ["English", "Dutch"]
+        "availableLanguage": ["English", "Dutch"],
+        "comment": "Marketing site available in English, Dutch, Spanish, German, French, and Japanese. Direct customer support in English and Dutch only."
       },
       "sameAs": [
         "https://play.google.com/store/apps/details?id=com.wandervox.app",
@@ -105,72 +106,17 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://wandervox.app/#faq",
+      "@id": "https://wandervox.app/ja/#faq",
+      "inLanguage": "ja",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How many languages and destinations does WanderVox support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "WanderVox supports voice-to-voice translation in 49 languages and curated cultural content for 51 destinations across Europe, Asia, the Middle East, Africa, and the Americas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is WanderVox free to use?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! WanderVox is free with 5 voice translations and 3 camera translations per day. Need more? Grab a Trip Pass for $2.99/week, or go Monthly ($6.99/mo) or Annual ($59.99/yr) for unlimited everything."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can WanderVox translate signs and menus from photos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Point your camera at any sign, menu, document, or printed text and WanderVox will instantly detect the language and translate it into your preferred language with contextual notes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What platforms is WanderVox available on?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "WanderVox is live on Android via Google Play, and iOS is coming soon."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does the Explore feature work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Explore uses AI to curate personalized local recommendations based on your location and interests. It surfaces street food, hidden gems, nightlife, art, nature spots, and relaxation options that most tourists never find."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I plan my whole trip in WanderVox?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The Trip tab gives you a dated itinerary for flights, hotels, restaurants, and activities, with local booking reminders, live currency conversion, and saved places grouped into one screen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to create an account?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. WanderVox starts instantly as a guest using Firebase anonymous auth. Google Sign-In is optional — it keeps your identity if you reinstall the app. Trip data lives on your device."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does offline translation really work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "On Android, typed text translation works fully offline using on-device ML Kit once a language is downloaded. Voice translation and camera translation still require a connection."
-          }
-        }
+        { "@type": "Question", "name": "WanderVoxは何言語・いくつの旅先に対応していますか？", "acceptedAnswer": { "@type": "Answer", "text": "WanderVoxはヨーロッパ、アジア、中東、アフリカ、アメリカ大陸の51の旅先について、49言語の音声から音声への翻訳と、キュレーション済みの文化コンテンツを提供します。" } },
+        { "@type": "Question", "name": "WanderVoxは無料で使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。WanderVoxは1日に音声翻訳5回、カメラ翻訳3回まで無料です。もっと使いたい方は、Trip Pass（$2.99/週）、Monthly（$6.99/月）、Annual（$59.99/年）で無制限利用が可能です。" } },
+        { "@type": "Question", "name": "WanderVoxは写真から看板やメニューを翻訳できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。看板、メニュー、書類、印刷されたテキストにカメラを向けると、WanderVoxが即座に言語を判定し、文脈ノート付きであなたの言語に翻訳します。" } },
+        { "@type": "Question", "name": "WanderVoxはどのプラットフォームで使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "WanderVoxはGoogle PlayのAndroid版で配信中です。iOS版も近日公開予定です。" } },
+        { "@type": "Question", "name": "Explore機能はどう動きますか？", "acceptedAnswer": { "@type": "Answer", "text": "ExploreはAIで、現在地と興味に合わせたローカルおすすめをキュレーション。観光客がたどり着けない屋台、隠れた名所、ナイトライフ、アート、自然、リラクゼーションスポットを表示します。" } },
+        { "@type": "Question", "name": "WanderVoxで旅全体を計画できますか？", "acceptedAnswer": { "@type": "Answer", "text": "はい。Tripタブはフライトやホテルからレストランやアクティビティまでをまとめた日付付き旅程を提供し、予約リマインダー、リアルタイム通貨換算、保存した場所を1画面で確認できます。" } },
+        { "@type": "Question", "name": "アカウントを作る必要はありますか？", "acceptedAnswer": { "@type": "Answer", "text": "いいえ。WanderVoxはFirebase Anonymous Authで即座にゲストとして開始します。Googleサインインは任意で、アプリを再インストールしてもアイデンティティを保持できます。旅のデータは端末内に保存されます。" } },
+        { "@type": "Question", "name": "オフライン翻訳は本当に使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "Androidでは、言語を一度ダウンロードしておけば、端末上のML Kitで入力テキストの翻訳が完全オフラインで動作します。音声翻訳とカメラ翻訳には接続が必要です。" } }
       ]
     }
   ]

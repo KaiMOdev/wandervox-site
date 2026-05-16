@@ -220,6 +220,7 @@
     "a3": "Oui. Pointe ta caméra sur un panneau, un menu, un document ou du texte imprimé : WanderVox détecte instantanément la langue et le traduit dans ta langue avec des notes contextuelles.",
     "q4": "Sur quelles plateformes WanderVox est-il disponible ?",
     "a4": "WanderVox est disponible sur Android via <a href=\"https://play.google.com/store/apps/details?id=com.wandervox.app\" target=\"_blank\" rel=\"noopener noreferrer\">Google Play</a>, et iOS arrive bientôt.",
+    "a4_plain": "WanderVox est disponible sur Android via Google Play, et iOS arrive bientôt.",
     "q5": "Comment fonctionne Explore ?",
     "a5": "Explore utilise l'IA pour curer des recommandations locales personnalisées selon ta position et tes goûts. Il révèle street food, pépites cachées, vie nocturne, art, nature et lieux de détente que la plupart des touristes ne trouvent jamais.",
     "q6": "Puis-je planifier tout mon voyage dans WanderVox ?",

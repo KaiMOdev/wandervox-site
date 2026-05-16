@@ -220,6 +220,7 @@
     "a3": "はい。看板、メニュー、書類、印刷されたテキストにカメラを向けると、WanderVoxが即座に言語を判定し、文脈ノート付きであなたの言語に翻訳します。",
     "q4": "WanderVoxはどのプラットフォームで使えますか？",
     "a4": "WanderVoxは<a href=\"https://play.google.com/store/apps/details?id=com.wandervox.app\" target=\"_blank\" rel=\"noopener noreferrer\">Google Play</a>のAndroid版で配信中です。iOS版も近日公開予定です。",
+    "a4_plain": "WanderVoxはGoogle PlayのAndroid版で配信中です。iOS版も近日公開予定です。",
     "q5": "Explore機能はどう動きますか？",
     "a5": "ExploreはAIで、現在地と興味に合わせたローカルおすすめをキュレーション。観光客がたどり着けない屋台、隠れた名所、ナイトライフ、アート、自然、リラクゼーションスポットを表示します。",
     "q6": "WanderVoxで旅全体を計画できますか？",
