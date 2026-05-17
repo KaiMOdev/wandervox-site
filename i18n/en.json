@@ -37,6 +37,7 @@
     "stat_free_label": "to Start"
   },
   "video": {
+    "src": "/videos/wandervox_launch_video_1080p.mp4",
     "aria": "WanderVox launch video",
     "fallback": "Your browser does not support embedded video."
   },

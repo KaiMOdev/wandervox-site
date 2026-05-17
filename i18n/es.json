@@ -37,6 +37,7 @@
     "stat_free_label": "para empezar"
   },
   "video": {
+    "src": "/videos/wandervox_launch_video_1080p.mp4",
     "aria": "Vídeo de lanzamiento de WanderVox",
     "fallback": "Tu navegador no admite vídeo integrado."
   },

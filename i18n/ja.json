@@ -37,6 +37,7 @@
     "stat_free_label": "スタート"
   },
   "video": {
+    "src": "/videos/wandervox_japanese_promo_1080x1920.mp4",
     "aria": "WanderVox ローンチビデオ",
     "fallback": "お使いのブラウザは埋め込み動画に対応していません。"
   },
