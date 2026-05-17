@@ -37,6 +37,7 @@
     "stat_free_label": "om te starten"
   },
   "video": {
+    "src": "/videos/wandervox_launch_video_1080p.mp4",
     "aria": "WanderVox lanceervideo",
     "fallback": "Je browser ondersteunt geen ingebedde video."
   },

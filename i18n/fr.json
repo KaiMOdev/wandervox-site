@@ -37,6 +37,7 @@
     "stat_free_label": "pour démarrer"
   },
   "video": {
+    "src": "/videos/wandervox_launch_video_1080p.mp4",
     "aria": "Vidéo de lancement WanderVox",
     "fallback": "Ton navigateur ne prend pas en charge les vidéos intégrées."
   },
